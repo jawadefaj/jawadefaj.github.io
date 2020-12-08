@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.38bb9671c1fa47cf8853413fc3a62f50.js"
+  "/precache-manifest.cdc223959586433b21269b32b02ee3fe.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "jawadefaj.github"});
