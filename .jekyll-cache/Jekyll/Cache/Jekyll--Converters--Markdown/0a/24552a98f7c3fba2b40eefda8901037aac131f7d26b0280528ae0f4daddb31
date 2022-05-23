@@ -1,31 +1,26 @@
----
-layout: page
-permalink: /research/
-title: Research
----
-
-Describe your research interests here.
+I"p
+<p>Describe your research interests here.</p>
 
 <h2>Publications</h2>
 <ul>
 	<li>
-		<b>"A Modular Architecture for Procedural Generation of Towns, Intersections and Scenarios for Testing Autonomous Vehicles"</b><br>
-		<i>Ishaan Paranjape, Abdul Jawad, Yanwen Xu, Asiiah Song, Jim Whitehead</i><br>
-		2020 IEEE Intelligent Vehicles Symposium (IV)<br>
+		<b>"A Modular Architecture for Procedural Generation of Towns, Intersections and Scenarios for Testing Autonomous Vehicles"</b><br />
+		<i>Ishaan Paranjape, Abdul Jawad, Yanwen Xu, Asiiah Song, Jim Whitehead</i><br />
+		2020 IEEE Intelligent Vehicles Symposium (IV)<br />
 		<a href=""><div class="color-button">pdf</div></a><a href=""><div class="color-button">cite</div></a><a href=""><div class="color-button">code</div></a>
-	</li><br>
+	</li><br />
 	<li>
-		<b>"Procedural Generation of High- Definition Road Networks for Autonomous Vehicle Testing and Traffic Simulations"</b><br>
-		<i>Golam Md Muktadir, Abdul Jawad, Ishaan Paranjape, Jim Whitehead, and Aleksey Shepelev</i><br>
-		SAE, 2022<br>
+		<b>"Procedural Generation of High- Definition Road Networks for Autonomous Vehicle Testing and Traffic Simulations"</b><br />
+		<i>Golam Md Muktadir, Abdul Jawad, Ishaan Paranjape, Jim Whitehead, and Aleksey Shepelev</i><br />
+		SAE, 2022<br />
 		<a href=""><div class="color-button">pdf</div></a><a href=""><div class="color-button">cite</div></a><a href=""><div class="color-button">code</div></a>
-	</li><br>
+	</li><br />
 	<li>
-		<b>"CogMod: Simulating Human Information Processing Limitation While Driving"</b><br>
-		<i>Abdul Jawad, and Jim Whitehead</i><br>
-		2022 IEEE Intelligent Vehicles Symposium (IV)<br>
+		<b>"CogMod: Simulating Human Information Processing Limitation While Driving"</b><br />
+		<i>Abdul Jawad, and Jim Whitehead</i><br />
+		2020 IEEE Intelligent Vehicles Symposium (IV)<br />
 		<a href=""><div class="color-button">pdf</div></a><a href=""><div class="color-button">cite</div></a><a href=""><div class="color-button">code</div></a>
-	</li><br>
+	</li><br />
 
 <!-- 
 	<li>
@@ -40,20 +35,18 @@ Describe your research interests here.
 <h2>Research Projects</h2>
 <ul>
 	<li>
-		<b>Driver Behavior Modeling</b><br>
-		UCSC, 2021-Present<br>
-		<i>Other details such as advisor's name may go here</i><br>
+		<b>Project title</b><br />
+		University, Duration<br />
+		<i>Other details such as advisor's name may go here</i><br />
 		<a href=""><div class="color-button">report</div></a><a href=""><div class="color-button">code</div></a>
-	</li><br>
+	</li><br />
 	<li>
-		<b>Project title</b><br>
-		University, Duration<br>
-		<i>Other details such as advisor's name may go here</i><br>
+		<b>Project title</b><br />
+		University, Duration<br />
+		<i>Other details such as advisor's name may go here</i><br />
 		<a href=""><div class="color-button">report</div></a><a href=""><div class="color-button">code</div></a>
-	</li><br>
+	</li><br />
 </ul>
-
-
 
 <!-- 
 <h2>Research Implementations</h2>
@@ -68,3 +61,4 @@ Describe your research interests here.
 	</li><br>
 </ul>
  -->
+:ET
