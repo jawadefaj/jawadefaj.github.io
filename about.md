@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-{% include image.html url="/images/profile.jpg" caption="A sassy caption here" width=300 align="right" %}
+{% include image.html url="/images/profile.jpg" caption="" width=300 align="right" %}
 
 
 
 
-
+Abdul Jawad is a graduate student at University of California Santa Cruz. He recently passed his PhD Qualifying exam and now is a PhD candidate. He started his career as a game developer while being an undergraduate student at BUET. He co-founded a portbliss game studio. 
 
 
 <!-- 
