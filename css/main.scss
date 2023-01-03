@@ -3,21 +3,21 @@
 ---
 @charset "utf-8";
 
-$base-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+$base-font-family: 'Titillium Web', sans-serif;
 $base-font-size:   1.25em;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #0077CC;
+$text-color:       rgb(226, 226, 226);
+$background-color: #525252;
+$brand-color:      #ffffff;
 
-$blue-color-dark: darken(#3E7AD1, 10%);
-$blue-color-light: #4B93DB;
+$blue-color-dark: darken(#5d5f61, 10%);
+$blue-color-light: #000408;
 
-$grey-color:       #828282;
+$grey-color:       #e6e5e5;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 

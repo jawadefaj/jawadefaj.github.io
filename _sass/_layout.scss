@@ -113,7 +113,7 @@ h1 /* .post-title */ {
     letter-spacing: -1px;
     line-height: 1;
 		font-family: 'Titillium Web', sans-serif;
-		color: $blue-color-dark;
+		color: #ffffff;
 
     @include media-query($on-laptop) {
 /*        font-size: 36px; */
@@ -153,7 +153,7 @@ h1 /* .post-title */ {
 }
 
 .footnotes ol li {list-style-type:decimal;}
-.footnotes ol {font-size:.85em; color:#666666;}	
+.footnotes ol {font-size:.85em; color:#a9a8a8;}	
 	
 html {
   overflow-y: scroll;
@@ -173,7 +173,7 @@ ul.listing li.listing-seperator {
 
 ul.listing li.listing-item time {
 
-	color: #333;
+	color: rgb(209, 209, 209);
 	font-weight: 500;
 	text-transform: uppercase;
 	padding-right: 10px;
