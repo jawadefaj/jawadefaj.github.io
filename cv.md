@@ -4,6 +4,10 @@ title: CV
 permalink: /cv/
 ---
 
+
+
+
+
 You can find my curriculum vitae/resume below.
 <ul>
 	<!-- 
