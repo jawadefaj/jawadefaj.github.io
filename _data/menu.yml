@@ -7,11 +7,16 @@
 - title: "Projects"
   href: "/projects/"
 
-# - title: "Blog"
-#   href: "/blog/"
+- title: "Publications"
+  href: "/publications/"
 
 - title: "CV"
   href: "/cv/"
+
+
+
+# - title: "Blog"
+#   href: "/blog/"
 
 
 
