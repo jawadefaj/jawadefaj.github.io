@@ -62,7 +62,10 @@ Here is a non-exhaustive list of my non-research projects. My research work can 
 
 	<li>
 		<b>Colored Pencil Box - A Branching Narrative</b>: "Colored Pencil Box" is a nonlinear branching narrative written as a collaborative fiction in Bangla. It started after I shared a four-line conversational prompt on Facebook, asking people to expand the conversation in the comments. Colored Pencil Box is an attempt to experiment with collaborative fiction and branching narrative. <br>
-		<a href=""><div class="color-button">report</div></a><a href="https://jawadefaj.github.io/Colored-Pencils-Box/index.html"><div class="color-button">play</div></a>
+
+		<img src="\images\projects\colored_pencil\pencil1.png" alt="Alternative Text" width="300" height="200">
+		<img src="\images\projects\colored_pencil\pencil2.png" alt="Alternative Text" width="300" height="200"> <br>
+		<a href="https://github.com/jawadefaj/Colored-Pencils-Box"><div class="color-button">github</div></a><a href="https://jawadefaj.github.io/Colored-Pencils-Box/index.html"><div class="color-button">play</div></a>
 	</li><br>
 
 
