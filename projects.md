@@ -9,6 +9,15 @@ Here is a non-exhaustive list of my non-research projects. My research work can 
 <ul>
 
 <li>
+		<b>Multi-region-attention</b>
+	The project "MRA: Multi-scale Region Attention" explores improving computation for Vision transformers (ViTs) in image segmentation task. The model uses a hierarchical structure for high-resolution images, processing images in patches and merging them into a multi-layered feature map. It introduces a multi-scale regional self-attention mechanism in each transformer layer, enabling each pixel to attend to multiple scale neighborhoods. This approach minimizes computational load while improving the understanding of the global context. Our experiments demonstrate the model's effectiveness, suggesting potential for broader applications in vision tasks. <br>
+	<img src="\images\projects\mra\mra.png" alt="Alternative Text" width="370" height="200">
+	<img src="\images\projects\mra\multiscale_attention.png" alt="Alternative Text" width="370" height="200"> <br>
+	<a href="https://github.com/mahfuzalhasan/multi-region-attention/tree/main"><div class="color-button">github</div></a>
+</li><br>
+
+
+<li>
 		<b>JunctionArt</b>: JunctionArt is a PCG based tool for generating high-definition roads and intersections, crucial for autonomous vehicle testing. Using control lines, it creates diverse road networks with various lane and intersection types, outputting in OpenDRIVE format for broad compatibility. Key features include the generation of complex geometries, comprehensive metrics for expressive range analysis, and interoperability with major simulation tools like RoadRunner, Carla, and esmini. Developed with the pyodrx library, JunctionArt stands as an essential resource in autonomous vehicle development. The papers are included in the github repository. <br>
 	<img src="\images\projects\junction_art\a-roads.png" alt="Alternative Text" width="300" height="200">
 	<img src="\images\projects\junction_art\another-road.png" alt="Alternative Text" width="300" height="200">
@@ -16,9 +25,6 @@ Here is a non-exhaustive list of my non-research projects. My research work can 
 	<a href="https://github.com/AugmentedDesignLab/junction-art"><div class="color-button">github</div></a>
 	<a href="https://www.researchgate.net/publication/360840690_Procedural_Generation_of_High-Definition_Road_Networks_for_Autonomous_Vehicle_Testing_and_Traffic_Simulations"><div class="color-button">paper</div></a>
 </li><br>
-
-
-
 
 
 <li>

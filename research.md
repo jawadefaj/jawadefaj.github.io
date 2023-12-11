@@ -41,29 +41,59 @@ CogMod is a human driver behavior model based on theories from cognitive archite
 
 
 
-<h2>JunctionArt</h2>
+<h2>JunctionArt: Procedural road network generator</h2>
+<div style="text-align: right;"> UCSC, 2020-Present </div>
+<b>Overview</b><br>
+JunctionArt is a road generation tool that creates road networks, intersections and roundabouts for Autonomous Vehicle testing. It features various lane types and intersection designs with procedural generation of roundabouts compatible with simulation environments like Carla and RoadRunner. <br>
+
+<b>Related publications</b><br>
 <ul>
-	<li>
-		<b>JunctionArt: Road Network Generation for Autonomous Vehicle Testing</b><br>
-		UCSC, 2020-Present<br>
-		<b><i>Collaborator: Golam Md Muktadir, Abdul Jawad, Ishaan Paranjape, Jim Whitehead, and Aleksey Shepelev</i></b><br>
-		<i>JunctionArt is a road generation tool that can procedurally create road networks and intersections.  Generated roads exhibit different types of lane types such as turn lanes, one way streets, and multiple lanes, while intersections feature a range of incident roads (three to seven incident roads), leading to a variety of geometries and interior connecting lanes. These roads are output in the OpenDRIVE format, and hence are interoperable with a wide range of Autonomous Vehicle testing tools and simulation environments such as Carla, RoadRunner.</i> <br>
+    <li>
+        <b>Procedural Generation of High-Definition Road Networks for Autonomous Vehicle Testing and Traffic Simulations </b><br>
+        
+In the research paper we explore advanced road network generation techniques for autonomous vehicles. JunctionArt, our road and intersection generator, plays a key role. It creates diverse road networks and intersections with varying lane types and geometries, outputting in OpenDRIVE format for compatibility with various simulation tools. This paper demonstrates JunctionArt's ability to generate rare and complex road configurations. Multiple metrics are computed over generated roads—field of view (FOV), maximum turn curvature (maxCurvature), corner deviation angle (cornerDeviation), complexity, conflictArea, and the number of interior connection lanes—and are used to perform an expressive range analysis. <br>
+
+		<img src="\images\projects\junction_art\a-roads.png" alt="" width="300" height="170" style="display: inline-block;">
+		<img src="\images\projects\junction_art\another-road.png" alt="" width="300" height="170" style="display: inline-block;"> <br>
 		<a href="https://github.com/AugmentedDesignLab/junction-art"><div class="color-button">github</div></a>
-	</li><br>
+		<a href="https://www.sae.org/publications/technical-papers/content/12-06-01-0007/"><div class="color-button">paper</div></a>
+    </li>
+
+    <li>
+        <b>Realistic Road Generation: Intersections</b><br>
+			In this paper, we present a simple way to create high-quality road intersections with realistic shapes and lanes. We use helper roads to set up the intersections easily, saving time and effort. We checked our designs against real intersections and other generators to make sure they're good. Our intersections work with many simulation tools because they're made in the OpenDRIVE format. <br>
+        
+        <img src="\images\projects\junction_art\5-way-new-2.png" alt="" width="200" height="170" style="display: inline-block;">
+		<img src="\images\projects\junction_art\4-way-new-1.png" alt="" width="200" height="170" style="display: inline-block;">
+		<img src="\images\projects\junction_art\6-wa-new-1.png" alt="" width="200" height="170" style="display: inline-block;">
+		<img src="\images\projects\junction_art\7-way-new-2.png" alt="" width="200" height="170" style="display: inline-block;"> <br>
+		<a href="https://www.researchgate.net/profile/Golam-Md-Muktadir-2/publication/360354961_P_r_e_-P_r_i_n_t_Realistic_Road_Generation_Intersections/links/62723a27973bbb29cc601650/P-r-e-P-r-i-n-t-Realistic-Road-Generation-Intersections.pdf"><div class="color-button">paper</div></a>
+    </li>
 </ul>
 
-<h2>CruzWay</h2>
+
+<h2>CruzWay: Modular AV simulation tool</h2>
+<div style="text-align: right;"> UCSC, 2018-2019 </div>
+
+<b>Overview</b><br>
+CruzWay is a modular system designed for creating autonomous vehicle (AV) testing scenarios. It features procedurally generated town-sized road networks and intersections, and supports behavior-tree cars and pedestrians. Key modules include Town-sim-py for generating road networks, IntGen for intersection data, Modified netgenerate for custom road networks, and Sumo2Unreal for importing and generating road meshes in Unreal Engine. CruzWay's design allows for a variety of road configurations and supports various industry standard formats, enhancing the realism and complexity of AV testing scenarios. <br>
+
+<b>Key publications</b><br>
 <ul>
 	<li>
 		<b>CruzWay: A Modular Architecture for Generating Scenarios to Test Autonomous Vehicles</b><br>
-		UCSC, 2018-2019<br>
 		<b><i>Collaborator: Ishaan Paranjape, Abdul Jawad, Yanwen Xu, Asiiah Song, Jim Whitehead</i></b><br>
-		<i>CruzWay is a modular architecture that supports procedural generation of town sized road networks and intersections. CruzWay can generate scenarios with cars as well as pedestrians run by behavior trees (BTs) in the procedurally generated environment. The self-contained, modular nature of BTs in combination with procedural roads allows CruzWay to create a large number of scenarios.  </i><br>
+		This paper introduce CruzWay, a system designed for testing autonomous vehicles in simulated environments. CruzWay stands out for its ability to procedurally generate complex road networks and intersections, alongside road and navigation meshes from SUMO files. This approach, leveraging the modular nature of behavior trees, enables the creation of diverse and scalable testing scenarios, essential for training and evaluating autonomous vehicles in rare and challenging situations. <br>
 		<img src="\images\research\cruzway\cruzway1.png" alt="" width="200" height="170" style="display: inline-block;">
 		<img src="\images\research\cruzway\cruzway2.png" alt="" width="200" height="170" style="display: inline-block;">
 		<img src="\images\research\cruzway\cruzway3.png" alt="" width="200" height="170" style="display: inline-block;">
-		<img src="\images\research\cruzway\cruzway4.png" alt="" width="200" height="170" style="display: inline-block;"> <br>
+		<img src="\images\research\cruzway\cruzway_1.png" alt="" width="200" height="170" style="display: inline-block;">
+		<img src="\images\research\cruzway\cruzway4.png" alt="" width="200" height="170" style="display: inline-block;"> 
+		<img src="\images\research\cruzway\cruzway_5.png" alt="" width="200" height="170" style="display: inline-block;"> 
+		<img src="\images\research\cruzway\cruzway_4.png" alt="" width="300" height="170" style="display: inline-block;"><br>
 		<a href="https://github.com/AugmentedDesignLab/CruzWay"><div class="color-button">github</div></a>
+		<a href="https://docs.google.com/presentation/d/1vx4r2b_J-H5eupHZMiy-r2QsCdXXBPe-o32VAWo9upU/edit?usp=sharing"><div class="color-button">slide</div></a>
+		<a href="https://youtu.be/ru2K4Y_WrGs"><div class="color-button">presentation</div></a>
 	</li><br>
 </ul>
 <!-- 
