@@ -32,7 +32,7 @@ Here is a non-exhaustive list of my non-research projects. My research work can 
 	<img src="\images\projects\color_consistancy\cv2.png" alt="Color Calibration Image" width="300" height="200">
 	<img src="\images\projects\color_consistancy\cv3.png" alt="Test Pattern Image" width="300" height="200">
 	<img src="\images\projects\color_consistancy\cv4.png" alt="Color Distribution Chart" width="300" height="200"> <br>
-	<a href="https://github.com/jawadefaj/CSE_264_Computer_vision"><div class="color-button">gitHub</div></a>
+	<a href="https://github.com/jawadefaj/CSE_264_Computer_vision"><div class="color-button">github</div></a>
 </li>
 
 
@@ -41,7 +41,7 @@ Here is a non-exhaustive list of my non-research projects. My research work can 
 	<img src="\images\projects\perspective_correction\undistort.png" alt="Camera Calibration Image" width="300" height="200">
 	<img src="\images\projects\perspective_correction\parallel.png" alt="Captured Building Image" width="300" height="200">
 	<img src="\images\projects\perspective_correction\camera5.png" alt="Vanishing Points Image" width="300" height="200"> <br>
-	<a href="https://github.com/jawadefaj/CSE_264_Camera_calibration"><div class="color-button">gitHub</div></a>
+	<a href="https://github.com/jawadefaj/CSE_264_Camera_calibration"><div class="color-button">github</div></a>
 </li>
 
 
@@ -49,7 +49,7 @@ Here is a non-exhaustive list of my non-research projects. My research work can 
 	<b>Cat Mario AI </b>: Drawing inspiration from SethBling's MarI/O and Niko's CrAIg, this project utilizes NEAT to train an AI for "Cat Mario," a complex Mario-like game. The AI is designed to navigate through the game's complex traps and challenges. The dataset comprises real-time gameplay video feeds, which are analyzed to inform AI actions. Success is measured at various levels, from completing training levels to optimizing the algorithm for faster learning. Detailed insights and results can be found on GitHub. <br>
 	<img src="\images\projects\cat_mario\image_training_10_1.jpg" alt="mid training " width="900" height="100">
 	<img src="\images\projects\cat_mario\image_training_20_9.jpg" alt="end training " width="900" height="100"> <br>
-	<a href="https://github.com/jawadefaj/cat_mario"><div class="color-button">gitHub</div></a>
+	<a href="https://github.com/jawadefaj/cat_mario"><div class="color-button">github</div></a>
 </li>
 
 

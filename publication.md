@@ -9,16 +9,23 @@ title: Publication
 <ul>
 
 	<li>
+		<b>Accident Scenario Generation using Driver Behavior Model</b><br>
+		<i>Abdul Jawad, and Jim Whitehead</i><br>
+		IEEE International Conference on Intelligent Transportation Systems (ITSC), 2024<br>
+		<a href="https://www.academia.edu/123040796/Accident_Scenario_Generation_using_Driver_Behavior_Model"><div class="color-button">pdf</div></a>
+	</li><br>
+
+	<li>
 		<b>CogMod: Driver Model for Augmenting Scenario Criticality</b><br>
 		<i>Abdul Jawad, and Jim Whitehead</i><br>
-		IIEEE International Conference on Intelligent Transportation Systems (ITSC), 2023<br>
+		IEEE International Conference on Intelligent Transportation Systems (ITSC), 2023<br>
 		<a href="https://www.researchgate.net/publication/374476345_CogMod_Driver_Model_for_Augmenting_Scenario_Criticality"><div class="color-button">pdf</div></a>
 	</li><br>
 
 	<li>
 		<b>PedGrid-A Simple yet Expressive Simulation Environment for Pedestrian Behavior Modeling</b><br>
 		<i>Golam Md Muktadir, Taorui Huang, Zarif Ikram, Abdul Jawad, Jim Whitehead</i><br>
-		IIEEE International Conference on Intelligent Transportation Systems (ITSC), 2023<br>
+		IEEE International Conference on Intelligent Transportation Systems (ITSC), 2023<br>
 		<a href="https://www.researchgate.net/profile/Golam-Md-Muktadir-2/publication/372540735_PedGrid_-_A_Simple_yet_Expressive_Simulation_Environment_for_Pedestrian_Behavior_Modeling/links/64bd813fb9ed6874a53eb127/PedGrid-A-Simple-yet-Expressive-Simulation-Environment-for-Pedestrian-Behavior-Modeling.pdf"><div class="color-button">pdf</div></a>
 	</li><br>
 
@@ -33,14 +40,14 @@ title: Publication
 		<b>CogMod: Simulating Human Information Processing Limitation While Driving</b><br>
 		<i>Abdul Jawad, and Jim Whitehead</i><br>
 		IEEE Intelligent Vehicles Symposium (IV), 2022<br>
-		<a href=""><div class="color-button">pdf</div></a>
+		<a href="https://ieeexplore.ieee.org/abstract/document/9827128"><div class="color-button">pdf</div></a>
 	</li><br>
 
 	<li>
 		<b>Procedural Generation of High- Definition Road Networks for Autonomous Vehicle Testing and Traffic Simulations</b><br>
 		<i>Golam Md Muktadir, Abdul Jawad, Ishaan Paranjape, Jim Whitehead, and Aleksey Shepelev</i><br>
 		SAE International Journal of Connected and Automated Vehicles, 2023<br>
-		<a href=""><div class="color-button">pdf</div></a>
+		<a href="https://www.sae.org/publications/technical-papers/content/12-06-01-0007/"><div class="color-button">pdf</div></a>
 	</li><br>
 	
 	<li>
