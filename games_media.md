@@ -15,7 +15,7 @@ title: Games and VR
     <img src="\images\projects\ho71\image2.png" alt="Heroes of 71 Gameplay Image 1" width="300" height="200" style="display: inline-block;">
     <img src="\images\projects\ho71\image3.png" alt="Heroes of 71 Gameplay Image 2" width="300" height="200" style="display: inline-block;">
     <img src="\images\projects\ho71\image1.png" alt="Heroes of 71 Gameplay Image 3" width="300" height="200" style="display: inline-block;"> <br>
-	<a href="https://play.google.com/store/apps/details?id=com.portbliss.ho71"><div class="color-button">download</div></a>
+	<a href="https://apkpure.com/heroes-of-71/com.portbliss.ho71"><div class="color-button">download</div></a>
     <a href="https://youtu.be/AN14gZIs7D8"><div class="color-button">trailer</div></a>
 </li><br>
 
@@ -66,11 +66,10 @@ title: Games and VR
 	<img src="\images\projects\saqqara\iamge2.png" alt="Alternative Text" width="300" height="200">
 	<img src="\images\projects\saqqara\image.png" alt="Alternative Text" width="300" height="200">
 	<img src="\images\projects\saqqara\image3.png" alt="Alternative Text" width="300" height="200"> <br>
-	<a href="\cv\3DSaqqara_Draft01.pdf"><div class="color-button">report</div></a>
-	<a href="\cv\3DSaqqara_Slides.pdf"><div class="color-button">slides</div></a>
+	<a href="\pdf\3DSaqqara_Draft01.pdf"><div class="color-button">report</div></a>
+	<a href="\pdf\3DSaqqara_Slides.pdf"><div class="color-button">slides</div></a>
 
 
 
 
 
-</ul>
