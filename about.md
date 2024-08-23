@@ -23,8 +23,10 @@ permalink: /about/
     <div style="width: 33%;">
         <!-- Your image content goes here -->
         <img src="/images/profile.jpg" style="width: 100%;">
+        <img src="/images/conference_ids.jpg" style="width: 100%;">
         <img src="/images/itsc.jpeg" style="width: 100%;">
         <img src="/images/presentation_itsc.jpeg" style="width: 100%;">
+
     </div>
 
 </div>
