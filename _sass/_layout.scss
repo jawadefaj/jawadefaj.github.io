@@ -1,7 +1,7 @@
 /**
  * Site footer
  */
-.site-footer {
+ .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 }
@@ -66,8 +66,6 @@
     }
 }
 
-
-
 /**
  * Page content
  */
@@ -98,8 +96,6 @@
     font-size: 24px;
 }
 
-
-
 /**
  * Posts
  */
@@ -108,80 +104,97 @@
 }
 
 h1 /* .post-title */ {
-/*    font-size: 42px; */
     margin-top: 10px;
     letter-spacing: -1px;
     line-height: 1;
-		font-family: 'Titillium Web', sans-serif;
-		color: #ffffff;
-
-    @include media-query($on-laptop) {
-/*        font-size: 36px; */
-    }
+    font-family: 'Titillium Web', sans-serif;
+    color: $new-white-color;
 }
 
 .post-content {
     margin-bottom: $spacing-unit;
 
     h2 {
-		font-family: 'Titillium Web', sans-serif;
-	    font-weight: 500;
-/*        font-size: 32px; */
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 500;
+        color: $brand-color;  // Example color for h2
 
         @include media-query($on-laptop) {
-/*            font-size: 28px; */
+            // Adjust font size on laptop
         }
     }
 
     h3 {
-		font-style: italic;
+        font-style: italic;
         font-weight: 500;
-/*        font-size: 26px; */
+        color: $blue-color-dark;  // Example color for h3
 
         @include media-query($on-laptop) {
-/*            font-size: 22px; */
+            // Adjust font size on laptop
         }
     }
 
     h4 {
-/*       font-size: 20px; */
+        color: $grey-color-dark;  // Example color for h4
 
         @include media-query($on-laptop) {
-/*            font-size: 18px; */
+            // Adjust font size on laptop
         }
     }
 }
 
-.footnotes ol li {list-style-type:decimal;}
-.footnotes ol {font-size:.85em; color:#a9a8a8;}	
-	
+.footnotes ol li {
+    list-style-type: decimal;
+}
+
+.footnotes ol {
+    font-size: .85em;
+    color: $new-light-grey-color-2;
+}
+
 html {
-  overflow-y: scroll;
+    overflow-y: scroll;
 }
 
 ul.listing {
-	list-style-type: none;
-	margin-left: 0px;
+    list-style-type: none;
+    margin-left: 0px;
 }
 
 ul.listing li.listing-seperator {
-	padding-top: 15px;
-	font-weight: bold;
-	font-family: 'Titillium Web', sans-serif;
-	font-size: 1.17em;
+    padding-top: 15px;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.17em;
 }
 
 ul.listing li.listing-item time {
-
-	color: rgb(209, 209, 209);
-	font-weight: 500;
-	text-transform: uppercase;
-	padding-right: 10px;
+    color: $new-grey-rgb-color;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-right: 10px;
 }
 
 ul.listing li.listing-item a {
-	color: $blue-color-dark;
-	font-weight: 400;
-	font-family: 'Titillium Web', sans-serif;
+    color: $blue-color-dark;
+    font-weight: 400;
+    font-family: 'Titillium Web', sans-serif;
 }
 
+/**
+ * Updates section
+ */
+.updates {
+    color: $update-text;  // Replace with a defined color variable
+    height: 10em;
+    overflow-y: scroll;
+}
+
+/**
+ * Image styling for inline images
+ */
+.image-inline {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+}

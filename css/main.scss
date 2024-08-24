@@ -17,16 +17,33 @@ $brand-color:      #9cff9c;
 $blue-color-dark: darken(#5d5f61, 10%);
 $blue-color-light: #000408;
 
-$grey-color:       #9cff9c;
+$grey-color: $brand-color;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+$new-color-button-bg: #b0acac;
+$new-color-button-text: rgb(255, 0, 0);
+$new-color-tosu: #b00000;
+$new-color-tosu-bg: #f5f5f5;
+
+$new-white-color: #ffffff;
+$new-grey-color: grey;
+
+$new-light-grey-color: #f3f3f3;
+$new-black-color: #000000;
+
+$new-light-grey-color-2: #a9a8a8;
+$new-grey-rgb-color: rgb(209, 209, 209);
+
+$new-black-rgba-color: rgba(0,0,0,0.8);
+
+$update-text: rgb(255, 0, 0);
 
 // Width of the content area
 $content-width:    1100px;
 
 $on-palm:          600px;
-$on-laptop:        1100px;
+$on-laptop: $content-width;
 
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
@@ -37,9 +54,9 @@ $on-laptop:        1100px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
     "header",
-	"mobile-header",
+    "mobile-header",
     "base",
     "layout",
     "syntax-highlighting",
-	"image"
+    "image"
 ;

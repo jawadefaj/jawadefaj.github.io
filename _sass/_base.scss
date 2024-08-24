@@ -201,15 +201,13 @@ pre {
         }
     }
 }
-
-/**
- * Color button 
- */
+/** Color button */
 .color-button {
-    background: #b0acac;
+    background: $new-color-button-bg;
     border-style: none;
     border-radius: 10px;
-    color: rgb(255, 0, 0);
+    color: $new-color-button-text;
+    text-align: center;
     font-weight: bold;
     font-size: 12px;
     display: inline-block;
@@ -222,12 +220,16 @@ pre {
 }
 
 a.tosu {
-color: #b00000;
-background: #f5f5f5;
-text-decoration: none;
- padding: 2px; 
- font-weight: 600; 
-font-family: 'Capita', Georgia, serif;
+    color: $new-color-tosu;
+    background: $new-color-tosu-bg;
+    text-decoration: none;
+    padding: 2px; 
+    font-weight: 600; 
+    font-family: 'Capita', Georgia, serif;
 }
 
-
+.image-inline {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+}
