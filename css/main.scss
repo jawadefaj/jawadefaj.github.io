@@ -2,7 +2,6 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-@use "sass:math";
 
 $base-font-family: 'Titillium Web', sans-serif;
 $base-font-size:   1.25em;
@@ -14,12 +13,12 @@ $heading-font-weight: 200;
 $spacing-unit:     30px;
 
 $text-color: rgb(233, 233, 233);
-$h1-text-color: rgb(255, 248, 144);
-$h2-text-color: rgb(255, 245, 156);
-$h3-text-color: rgb(146, 255, 148);
-$h4-text-color: rgb(0, 255, 132);
-$h5-text-color: rgb(227, 193, 24);
-$h6-text-color: rgb(215, 199, 74);
+$h1-text-color: rgb(179, 255, 179);
+$h2-text-color: darken($h1-text-color, 10%);
+$h3-text-color: darken($h1-text-color, 20%);
+$h4-text-color: darken($h1-text-color, 30%);
+$h5-text-color: darken($h1-text-color, 40%);
+$h6-text-color: darken($h1-text-color, 50%);
 
 
 $background-color: rgb(62, 62, 62);
@@ -40,8 +39,8 @@ $grey-color: rgb(138, 137, 137);
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-$color-button-bg: rgb(255, 255, 255);
-$color-button-text: rgb(0, 255, 42);
+$color-button-bg: lighten($background-color, 20%);
+$color-button-text: $link-color-visited;
 
 $black-rgba-color: rgba(0, 0, 0, 0.8);
 

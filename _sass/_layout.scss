@@ -2,7 +2,7 @@
  * Site footer
  */
  .site-footer {
-    border-top: 1px solid $grey-color-light;
+    border-top: 2px solid $link-color;
     padding: $spacing-unit 0;
 }
 
@@ -11,8 +11,15 @@
     margin-bottom: $spacing-unit / 2;
 }
 
-.contact-list,
+.contact-list
+{
+    color: $link-color;
+    list-style: none;
+    margin-left: 0;
+}
+
 .social-media-list {
+    color: $link-color;
     list-style: none;
     margin-left: 0;
 }

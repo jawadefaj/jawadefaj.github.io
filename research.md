@@ -5,7 +5,7 @@ title: Research
 ---
 
 <h2>CogMod: Cognitive Modeling of Human Driving Behavior</h2>
-<div style="text-align: right; color: red;"> UCSC, 2021-Present </div>
+<div style="text-align: right; color: #50C878"> UCSC, 2021-Present </div>
 
 <h3>Overview</h3>
 <p>CogMod is a human driver behavior model based on theories from cognitive architecture and traffic modeling. It simulates various human limitations to represent human cognition while driving, limiting agents' perception by providing selective updates of the surroundings. This model captures the variability in human driving by simulating perceptive and cognitive limitations. CogMod addresses the rarity of accident scenarios, enhancing the testing of autonomous vehicles with realistic human-like driving scenarios. It helps create diverse and critical accident scenarios by simulating human perceptual and cognitive limitations.</p>
@@ -44,7 +44,7 @@ title: Research
 </ul>
 
 <h2>JunctionArt: Procedural Road Network Generator</h2>
-<div style="text-align: right; color: red"> UCSC, 2020-Present </div>
+<div style="text-align: right; color: #50C878"> UCSC, 2020-Present </div>
 
 <h3>Overview</h3>
 <p>JunctionArt is a road generation tool that creates road networks, intersections, and roundabouts for Autonomous Vehicle testing. It features various lane types and intersection designs with procedural generation of roundabouts compatible with simulation environments like Carla and RoadRunner.</p>
@@ -74,7 +74,7 @@ title: Research
 </ul>
 
 <h2>CruzWay: Modular AV Simulation Tool</h2>
-<div style="text-align: right; color: red;"> UCSC, 2018-2019 </div>
+<div style="text-align: right; color: #50C878"> UCSC, 2018-2019 </div>
 
 <h3>Overview</h3>
 <p>CruzWay is a modular system designed for creating autonomous vehicle (AV) testing scenarios. It features procedurally generated town-sized road networks and intersections, and supports behavior-tree cars and pedestrians. Key modules include Town-sim-py for generating road networks, IntGen for intersection data, Modified netgenerate for custom road networks, and Sumo2Unreal for importing and generating road meshes in Unreal Engine. CruzWay's design allows for a variety of road configurations and supports various industry standard formats, enhancing the realism and complexity of AV testing scenarios.</p>
@@ -83,7 +83,6 @@ title: Research
 <ul>
     <li>
         <h4>CruzWay: A Modular Architecture for Generating Scenarios to Test Autonomous Vehicles</h4>
-        <p><i>Collaborators: Ishaan Paranjape, Abdul Jawad, Yanwen Xu, Asiiah Song, Jim Whitehead</i></p>
         <p>This paper introduces CruzWay, a system designed for testing autonomous vehicles in simulated environments. CruzWay stands out for its ability to procedurally generate complex road networks and intersections, alongside road and navigation meshes from SUMO files. This approach, leveraging the modular nature of behavior trees, enables the creation of diverse and scalable testing scenarios, essential for training and evaluating autonomous vehicles in rare and challenging situations.</p>
         <img src="\images\research\cruzway\cruzway1.png" alt="" class="image-inline">
         <img src="\images\research\cruzway\cruzway2.png" alt="" class="image-inline">

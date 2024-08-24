@@ -1,4 +1,4 @@
-@use "sass:math";
+
 /**
  * Reset some basic elements
  */
@@ -198,7 +198,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: $link-color-visited;
         }
     }
 }
