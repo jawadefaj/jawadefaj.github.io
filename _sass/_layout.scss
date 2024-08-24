@@ -1,3 +1,5 @@
+@use "sass:math";
+
 /**
  * Site footer
  */
@@ -8,7 +10,7 @@
 
 .footer-heading {
     font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: math.div($spacing-unit, 2);
 }
 
 .contact-list,
@@ -19,15 +21,15 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
+    color: $link-color;
+    margin-left: -(math.div($spacing-unit, 2));
     @extend %clearfix;
 }
 
 .footer-col {
     float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    margin-bottom: math.div($spacing-unit, 2);
+    padding-left: math.div($spacing-unit, 2);
 }
 
 .footer-col-1 {
@@ -108,7 +110,7 @@ h1 /* .post-title */ {
     letter-spacing: -1px;
     line-height: 1;
     font-family: 'Titillium Web', sans-serif;
-    color: $new-white-color;
+    color: $white-color;
 }
 
 .post-content {
@@ -117,7 +119,7 @@ h1 /* .post-title */ {
     h2 {
         font-family: 'Titillium Web', sans-serif;
         font-weight: 500;
-        color: $brand-color;  // Example color for h2
+        color: $h2-text-color;  // Example color for h2
 
         @include media-query($on-laptop) {
             // Adjust font size on laptop
@@ -127,7 +129,7 @@ h1 /* .post-title */ {
     h3 {
         font-style: italic;
         font-weight: 500;
-        color: $blue-color-dark;  // Example color for h3
+        color: $h3-text-color;  // Example color for h3
 
         @include media-query($on-laptop) {
             // Adjust font size on laptop
@@ -135,7 +137,7 @@ h1 /* .post-title */ {
     }
 
     h4 {
-        color: $grey-color-dark;  // Example color for h4
+        color: $h4-text-color;  // Example color for h4
 
         @include media-query($on-laptop) {
             // Adjust font size on laptop
@@ -149,7 +151,7 @@ h1 /* .post-title */ {
 
 .footnotes ol {
     font-size: .85em;
-    color: $new-light-grey-color-2;
+    color: $grey-color-light;
 }
 
 html {
@@ -169,7 +171,7 @@ ul.listing li.listing-seperator {
 }
 
 ul.listing li.listing-item time {
-    color: $new-grey-rgb-color;
+    color: $grey-color;
     font-weight: 500;
     text-transform: uppercase;
     padding-right: 10px;
@@ -197,4 +199,24 @@ ul.listing li.listing-item a {
     display: inline-block;
     width: 300px;
     height: 200px;
+}
+
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-text {
+    width: 66%;
+    text-align: justify;
+}
+
+.about-images {
+    width: 33%;
+}
+
+.profile-image {
+    width: 100%;
+    margin-bottom: 15px; /* Adds some space between images */
 }

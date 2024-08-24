@@ -1,3 +1,4 @@
+@use "sass:math";
 /**
  * Reset some basic elements
  */
@@ -17,7 +18,7 @@ body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: 300;
+    font-weight: $base-font-weight;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -33,7 +34,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: math.div($spacing-unit, 2);
 }
 
 
@@ -81,7 +82,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 200;
+    font-weight:$heading-font-weight
 }
 
 
@@ -90,16 +91,16 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $link-color;
     text-decoration: none;
 
    &:visited {
-    /*    color: darken($brand-color, 15%); */
+        color: $link-color-visited;
     } 
 
     &:hover {
-        color: $text-color;
-        // text-decoration: underline;
+        color: $link-color-hover;
+        text-decoration: underline;
     }
 }
 
@@ -109,7 +110,7 @@ a {
 blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
+    padding-left: math.div($spacing-unit, 2);
     font-size: 18px;
     letter-spacing: -1px;
     font-style: italic;
@@ -164,8 +165,8 @@ pre {
     @include media-query($on-laptop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
+        padding-right: math.div($spacing-unit, 2);;
+        padding-left: math.div($spacing-unit, 2);;
     }
 }
 
@@ -203,29 +204,20 @@ pre {
 }
 /** Color button */
 .color-button {
-    background: $new-color-button-bg;
+    background: $color-button-bg;
     border-style: none;
-    border-radius: 10px;
-    color: $new-color-button-text;
+    border-radius: 15px;
+    color: $color-button-text;
     text-align: center;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 18px;
     display: inline-block;
-    padding: 0px 10px;
-    margin: 0px 5px 0 0;
+    padding: 0px 15px;
+    margin: 0px 8px 0 0;
     cursor: pointer;
     &:hover {
         background: $blue-color-light;
     }
-}
-
-a.tosu {
-    color: $new-color-tosu;
-    background: $new-color-tosu-bg;
-    text-decoration: none;
-    padding: 2px; 
-    font-weight: 600; 
-    font-family: 'Capita', Georgia, serif;
 }
 
 .image-inline {

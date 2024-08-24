@@ -1,11 +1,12 @@
 ---
 layout: page
-title: About
+title: Abdul Jawad
 permalink: /about/
 ---
-<div style="display: flex; justify-content: space-between;">
 
-    <div style="width: 66%; text-align: justify;">
+<div class="about-container">
+
+    <div class="about-text">
 
         <p>Jawad is a graduate student at the University of California, Santa Cruz, pursuing a Ph.D. in Computational Media with a focus on human driver behavior modeling to assist simulation-based autonomous vehicle testing. He obtained his Bachelor's degree in Computer Science and Engineering from the Bangladesh University of Engineering and Technology before completing his Master of Science in Computational Media at UCSC.</p>
 
@@ -17,16 +18,13 @@ permalink: /about/
 
         <p>He has also been involved in organizing workshops and reviewing papers for IEEE conferences, notably the 1st SceGen workshop at IEEE IV 2023 and serving as a reviewer for IEEE ITSC 2022 and IEEE TOG 2021. He is a regular attendee at Intelligent Transportation Systems (ITS) and Advanced Driver-Assistance Systems (ADAS) conferences. His academic and professional achievements have been recognized through awards such as the Campus2Career Youth Award in 2016 and the National ICT Award in 2016.</p>
 
-        <p>Beyond his professional endeavors, Jawad is deeply passionate about chess, engaging in the game almost daily. In addition to these interests, Jawad is committed to mentoring and teaching. He dedicates time each year to volunteer in the summer internship program (SIP) at UCSC, guiding high school students in developing research skills and gaining valuable experiences. </p>
+        <p>Beyond his professional endeavors, Jawad is deeply passionate about chess, engaging in the game almost daily. In addition to these interests, Jawad is committed to mentoring and teaching. He dedicates time each year to volunteer in the summer internship program (SIP) at UCSC, guiding high school students in developing research skills and gaining valuable experiences.</p>
     </div>
 
-    <div style="width: 33%;">
-        <!-- Your image content goes here -->
-        <img src="/images/profile.jpg" style="width: 100%;">
-        <img src="/images/conference_ids.jpg" style="width: 100%;">
-        <img src="/images/itsc.jpeg" style="width: 100%;">
-        <img src="/images/presentation_itsc.jpeg" style="width: 100%;">
-
+    <div class="about-images">
+        <img src="/images/conference_ids.jpg" alt="Conference IDs" class="profile-image">
+        <img src="/images/itsc.jpeg" alt="ITSC Conference" class="profile-image">
+        <img src="/images/presentation_itsc.jpeg" alt="Presentation at ITSC" class="profile-image">
     </div>
 
 </div>

@@ -12,11 +12,11 @@
 	}
 
 .site-nav .menu {
-		border: 3px solid $new-white-color;
+		border: 3px solid $white-color;
 		border-radius: 5px;
-		-moz-box-shadow: 0px 2px 2px $new-black-rgba-color;
-		-webkit-box-shadow: 0px 2px 2px $new-black-rgba-color;
-		box-shadow: 0px 2px 2px $new-black-rgba-color;
+		-moz-box-shadow: 0px 2px 2px $black-rgba-color;
+		-webkit-box-shadow: 0px 2px 2px $black-rgba-color;
+		box-shadow: 0px 2px 2px $black-rgba-color;
 	}
 
 
@@ -31,7 +31,7 @@
 	}
 
 .site-nav ul.menu a {
-		background: $new-white-color;
+		background: $white-color;
 		color: $blue-color-dark;
 	}
 
@@ -54,7 +54,7 @@
 		text-transform: uppercase;
 		right: auto;
 		width: auto;
-		background: $new-white-color;
+		background: $white-color;
 	}
 
 	.site-nav .sub-menu {
