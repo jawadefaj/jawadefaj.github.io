@@ -22,6 +22,7 @@ permalink: /about/
     </div>
 
     <div class="about-images">
+        <img src="/images/profile.jpg" alt="Conference IDs" class="profile-image">
         <img src="/images/conference_ids.jpg" alt="Conference IDs" class="profile-image">
         <img src="/images/itsc.jpeg" alt="ITSC Conference" class="profile-image">
         <img src="/images/presentation_itsc.jpeg" alt="Presentation at ITSC" class="profile-image">
