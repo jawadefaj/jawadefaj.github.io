@@ -225,3 +225,9 @@ ul.listing li.listing-item a {
     width: 100%;
     margin-bottom: 10px; /* Adds some space between images */
 }
+
+/* Define a class for highlighting important technical terms */
+.highlighted-term {
+    color: #73c7ff; /* Use the blue shade for highlighting */
+    font-weight: bold; /* Optionally make the text bold for emphasis */
+}
