@@ -4,7 +4,7 @@ title: jawadefaj
 academic_email: abjawad@ucsc.edu
 
 description: > # this means to ignore newlines until "baseurl:"
-  I am a Ph.D. candidate at UCSC. I research accidents: why they happen, and how to prevent them. My interests include game development, autonomous vehicle testing, and machine learning.
+  copyright &copy; 2023 jawadefaj. All rights reserved.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 
