@@ -1,6 +1,6 @@
 # Site settings
 title: jawadefaj
-general_email: jawadefaj006@gmail.com
+# general_email: unique.corn.uc@gmail.com
 academic_email: abjawad@ucsc.edu
 
 description: > # this means to ignore newlines until "baseurl:"
@@ -8,12 +8,10 @@ description: > # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 
-url: "" # the base hostname & protocol for your site
+url: "https://jawadefaj.xyz/" # the base hostname & protocol for your site
 
-# twitter_username: jekyllrb
 github_username: jawadefaj
 linkedin_username: jawadefaj
-facebook_username: jawadefaj
 # researchgate_username: Abdul-Jawad-5
 # feel free to add other links here; you will have to add the SVG icon in _layouts/footer.html
 
