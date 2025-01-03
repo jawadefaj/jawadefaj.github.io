@@ -4,8 +4,6 @@ title:
 permalink: /about/
 ---
 
-## Abdul Jawad
-
 ### Contact Information
 - **Email:** abjawad@ucsc.edu  
 - **Phone:** +1 831-419-3654  
