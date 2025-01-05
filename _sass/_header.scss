@@ -26,8 +26,8 @@
 }
 
 .site-header .wrapper {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     position: relative;
 }
 
@@ -46,7 +46,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-family: $base-font-family;
 }
 
