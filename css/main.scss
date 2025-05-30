@@ -17,8 +17,6 @@ $h1-text-color: rgb(179, 255, 179);
 $h2-text-color: darken($h1-text-color, 10%);
 $h3-text-color: darken($h1-text-color, 20%);
 $h4-text-color: darken($h1-text-color, 30%);
-$h5-text-color: darken($h1-text-color, 40%);
-$h6-text-color: darken($h1-text-color, 50%);
 
 
 $background-color: rgb(62, 62, 62);
@@ -43,8 +41,6 @@ $color-button-bg: lighten($background-color, 20%);
 $color-button-text: $link-color-visited;
 
 $black-rgba-color: rgba(0, 0, 0, 0.8);
-
-$update-text: rgb(255, 0, 0);  // Replace with a defined color variable
 
 // Width of the content area
 $content-width:    1100px;
