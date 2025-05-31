@@ -12,8 +12,12 @@ title: Research
 
 <h3>Key Publications</h3>
 <ul>
+    <ul>
+        <li><a href="#cogmod-simulating-human-information-processing-limitation-while-driving-iv-aachen-germany-2022">CogMod: Simulating Human Information Processing Limitation While Driving (IV Aachen Germany 2022)</a></li>
+        <li><a href="#cogmod-driver-model-for-augmenting-scenario-criticality-itsc-bilbao-spain-2023">CogMod: Driver Model for Augmenting Scenario Criticality (ITSC Bilbao Spain 2023)</a></li>
+    </ul>
     <li>
-        <h4>CogMod: Simulating Human Information Processing Limitation While Driving (IV Aachen Germany 2022)</h4>
+        <h4 id="cogmod-simulating-human-information-processing-limitation-while-driving-iv-aachen-germany-2022">CogMod: Simulating Human Information Processing Limitation While Driving (IV Aachen Germany 2022)</h4>
         <p>This paper introduces a new method for analyzing and simulating human driving behavior, with an emphasis on integrating cognitive limitations into driving simulations. The goal is to more accurately reflect real-world driving behaviors and errors. This enhancement in modeling techniques leads to more realistic and nuanced simulations, which are crucial for realistic simulation. These simulations are conducted using the CARLA simulator. The model replicates human-like driving scenarios, including potential errors and reaction delays.</p>
         <img src="\images\research\cogmod\cogmod1_3.png" alt="" class="image-inline">
         <img src="\images\research\cogmod\cogmod1_1.png" alt="" class="image-inline">
@@ -29,7 +33,7 @@ title: Research
     </li><br>
 
     <li>
-        <h4>CogMod: Driver Model for Augmenting Scenario Criticality (ITSC Bilbao Spain 2023)</h4>
+        <h4 id="cogmod-driver-model-for-augmenting-scenario-criticality-itsc-bilbao-spain-2023">CogMod: Driver Model for Augmenting Scenario Criticality (ITSC Bilbao Spain 2023)</h4>
         <p>CogMod simulates more realistic human driver behavior, adapting to changing scenarios. This approach, using a unique gaze mechanism and a rich internal representation, better captures human driving variability. By comparing with real-world data, CogMod demonstrates its ability to make test scenarios for autonomous vehicles more complex while maintaining realism, addressing the limitations of previous models.</p>
         <img src="\images\research\cogmod\cogmod2_3.png" alt="" class="image-inline">
         <img src="\images\research\cogmod\cogmod2_1.png" alt="" class="image-inline">
@@ -51,8 +55,12 @@ title: Research
 
 <h3>Related Publications</h3>
 <ul>
+    <ul>
+        <li><a href="#procedural-generation-of-high-definition-road-networks-for-autonomous-vehicle-testing-and-traffic-simulations">Procedural Generation of High-Definition Road Networks for Autonomous Vehicle Testing and Traffic Simulations</a></li>
+        <li><a href="#realistic-road-generation-intersections">Realistic Road Generation: Intersections</a></li>
+    </ul>
     <li>
-        <h4>Procedural Generation of High-Definition Road Networks for Autonomous Vehicle Testing and Traffic Simulations</h4>
+        <h4 id="procedural-generation-of-high-definition-road-networks-for-autonomous-vehicle-testing-and-traffic-simulations">Procedural Generation of High-Definition Road Networks for Autonomous Vehicle Testing and Traffic Simulations</h4>
         <p>In the research paper, we explore advanced road network generation techniques for autonomous vehicles. JunctionArt, our road and intersection generator, plays a key role. It creates diverse road networks and intersections with varying lane types and geometries, outputting in OpenDRIVE format for compatibility with various simulation tools. This paper demonstrates JunctionArt's ability to generate rare and complex road configurations. Multiple metrics are computed over generated roads—field of view (FOV), maximum turn curvature (maxCurvature), corner deviation angle (cornerDeviation), complexity, conflictArea, and the number of interior connection lanes—and are used to perform an expressive range analysis.</p>
         <img src="\images\projects\junction_art\a-roads.png" alt="" class="image-inline">
         <img src="\images\projects\junction_art\another-road.png" alt="" class="image-inline"> 
@@ -62,7 +70,7 @@ title: Research
     </li><br>
 
     <li>
-        <h4>Realistic Road Generation: Intersections</h4>
+        <h4 id="realistic-road-generation-intersections">Realistic Road Generation: Intersections</h4>
         <p>In this paper, we present a simple way to create high-quality road intersections with realistic shapes and lanes. We use helper roads to set up the intersections easily, saving time and effort. We checked our designs against real intersections and other generators to make sure they're good. Our intersections work with many simulation tools because they're made in the OpenDRIVE format.</p>
         <img src="\images\projects\junction_art\5-way-new-2.png" alt="" class="image-inline">
         <img src="\images\projects\junction_art\4-way-new-1.png" alt="" class="image-inline">
@@ -81,8 +89,11 @@ title: Research
 
 <h3>Key Publications</h3>
 <ul>
+    <ul>
+        <li><a href="#cruzway-a-modular-architecture-for-generating-scenarios-to-test-autonomous-vehicles">CruzWay: A Modular Architecture for Generating Scenarios to Test Autonomous Vehicles</a></li>
+    </ul>
     <li>
-        <h4>CruzWay: A Modular Architecture for Generating Scenarios to Test Autonomous Vehicles</h4>
+        <h4 id="cruzway-a-modular-architecture-for-generating-scenarios-to-test-autonomous-vehicles">CruzWay: A Modular Architecture for Generating Scenarios to Test Autonomous Vehicles</h4>
         <p>This paper introduces CruzWay, a system designed for testing autonomous vehicles in simulated environments. CruzWay stands out for its ability to procedurally generate complex road networks and intersections, alongside road and navigation meshes from SUMO files. This approach, leveraging the modular nature of behavior trees, enables the creation of diverse and scalable testing scenarios, essential for training and evaluating autonomous vehicles in rare and challenging situations.</p>
         <img src="\images\research\cruzway\cruzway1.png" alt="" class="image-inline">
         <img src="\images\research\cruzway\cruzway2.png" alt="" class="image-inline">
