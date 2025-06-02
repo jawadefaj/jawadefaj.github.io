@@ -11,7 +11,7 @@ title: Research
 <p>CogMod is a human driver behavior model based on theories from cognitive architecture and traffic modeling. It simulates various human limitations to represent human cognition while driving, limiting agents' perception by providing selective updates of the surroundings. This model captures the variability in human driving by simulating perceptive and cognitive limitations. CogMod addresses the rarity of accident scenarios, enhancing the testing of autonomous vehicles with realistic human-like driving scenarios. It helps create diverse and critical accident scenarios by simulating human perceptual and cognitive limitations.</p>
 
 <details>
-    <summary><h3>Key Publications</h3></summary>
+<summary><h3>Key Publications</h3></summary>
     <ul>
     <li>
         <h4 id="cogmod-simulating-human-information-processing-limitation-while-driving-iv-aachen-germany-2022">CogMod: Simulating Human Information Processing Limitation While Driving (IV Aachen Germany 2022)</h4>
@@ -52,7 +52,7 @@ title: Research
 <p>JunctionArt is a road generation tool that creates road networks, intersections, and roundabouts for Autonomous Vehicle testing. It features various lane types and intersection designs with procedural generation of roundabouts compatible with simulation environments like Carla and RoadRunner.</p>
 
 <details>
-    <summary><h3>Related Publications</h3></summary>
+    <summary><h3>Key Publications</h3></summary>
     <ul>
     <li>
         <h4 id="procedural-generation-of-high-definition-road-networks-for-autonomous-vehicle-testing-and-traffic-simulations">Procedural Generation of High-Definition Road Networks for Autonomous Vehicle Testing and Traffic Simulations</h4>
