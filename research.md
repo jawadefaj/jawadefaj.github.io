@@ -10,7 +10,7 @@ title: Research
 
 {% for entry in site.data.site_data.research %}
 <div style="display: flex; justify-content: space-between; align-items: center;">
-    <h2 style="margin: 0; text-align: left;">{{ entry.title }}</h2>
+    <h3 style="margin: 0; text-align: left;">{{ entry.title }}</h3>
     <div style="color:#50C878; text-align: right;">{{ entry.date }}</div>
 </div>
 <hr>
@@ -71,7 +71,7 @@ summary.toggle{
   font-size:1.5rem;
   font-weight:600;
   color:#50C878;
-  white-space:nowrap;
+  white-space:wrap;
 }
 /* hide default marker */
 summary.toggle::-webkit-details-marker,
@@ -79,7 +79,7 @@ summary.toggle::marker{display:none}
 
 /* custom triangle */
 summary.toggle .arrow{
-  font-size:1.3em;           /* bigger arrow */
+  font-size:1.3em;           /* bigger 6rrow */
   transition:transform .2s ease;
 }
 /* rotate arrow when open */
@@ -87,8 +87,8 @@ details[open] > summary.toggle .arrow{
   transform:rotate(90deg);
 }
 </style>
-
-<!-- ─────  J S  (A C C O R D I O N)  ──────────────────────────────────────────────── -->
+<!-- 
+─────  J S  (A C C O R D I O N)  ────────────────────────────────────────────────
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const all = document.querySelectorAll('details');
@@ -97,4 +97,4 @@ document.addEventListener('DOMContentLoaded', () => {
     all.forEach(o => { if (o !== d) o.open = false; });
   }));
 });
-</script>
+</script> -->

@@ -5,9 +5,7 @@ title: Projects
 ---
 
 <p>
-Here is a non-exhaustive list of my non-research projects.
-My research work can be found <a href="/research">here</a>.
-You can also check out my Github profile <a href="https://github.com/jawadefaj">here</a> for a complete list of my projects.
+Check out my <a href="https://github.com/jawadefaj">Github profile</a> for a complete list of my projects.
 </p>
 <hr>
 {% for entry in site.data.site_data.projects %}
