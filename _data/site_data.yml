@@ -44,7 +44,7 @@ games_media:
       Free-to-play strategy game where players manage a guerrilla camp across
       20 historically inspired battles. I created the terrain tool, inventory
       module, and a Unity code-obfuscation pipeline that reduced load times by
-      35 % while deterring reverse-engineering.
+      35% while deterring reverse-engineering.
     images:
       - /images/projects/mukti_camp/image1.png
       - /images/projects/mukti_camp/image3.png
@@ -145,7 +145,7 @@ projects:
     image_layout: "row"
     description: >
       Multi-agent RL framework that guides a generic driving policy with
-      specialist experts, producing 44 % safer trajectories in
+      specialist experts, producing 44% safer trajectories in
       occluded-pedestrian scenarios.
     images: []
     links: []
@@ -186,17 +186,17 @@ publications:
   - title: "Accident Scenario Generation using Driver Behavior Model"
     authors: "Abdul Jawad, and Jim Whitehead"
     venue: "IEEE International Conference on Intelligent Transportation Systems (ITSC), 2024"
-    url: "https://www.academia.edu/123040796/Accident_Scenario_Generation_using_Driver_Behavior_Model" :contentReference[oaicite:0]{index=0}
+    url: "https://www.academia.edu/123040796/Accident_Scenario_Generation_using_Driver_Behavior_Model"
 
   - title: "CogMod: Driver Model for Augmenting Scenario Criticality"
     authors: "Abdul Jawad, and Jim Whitehead"
     venue: "IEEE International Conference on Intelligent Transportation Systems (ITSC), 2023"
-    url: "https://www.researchgate.net/publication/374476345_CogMod_Driver_Model_for_Augmenting_Scenario_Criticality" :contentReference[oaicite:1]{index=1}
+    url: "https://www.researchgate.net/publication/374476345_CogMod_Driver_Model_for_Augmenting_Scenario_Criticality"
 
   - title: "PedGrid – A Simple yet Expressive Simulation Environment for Pedestrian Behavior Modeling"
     authors: "Golam Md Muktadir, Taorui Huang, Zarif Ikram, Abdul Jawad, Jim Whitehead"
     venue: "IEEE International Conference on Intelligent Transportation Systems (ITSC), 2023"
-    url: "https://www.researchgate.net/profile/Golam-Md-Muktadir-2/publication/372540735_PedGrid_-_A_Simple_yet_Expressive_Simulation_Environment_for_Pedestrian_Behavior_Modeling/links/64bd813fb9ed6874a53eb127/PedGrid-A-Simple-yet-Expressive-Simulation-Environment-for-Pedestrian-Behavior-Modeling.pdf" :contentReference[oaicite:2]{index=2}
+    url: "https://www.researchgate.net/profile/Golam-Md-Muktadir-2/publication/372540735_PedGrid_-_A_Simple_yet_Expressive_Simulation_Environment_for_Pedestrian_Behavior_Modeling/links/64bd813fb9ed6874a53eb127/PedGrid-A-Simple-yet-Expressive-Simulation-Environment-for-Pedestrian-Behavior-Modeling.pdf"
 
   - title: "CogMod: Simulating Cognitive & Perceptive Limitations in Human Drivers"
     authors: "Abdul Jawad"
@@ -232,7 +232,7 @@ research:
       - title: "WaveFormer: A 3 D Transformer with Wavelet-Driven Feature Representation for Efficient Medical Image Segmentation (MICCAI 2025)"
         text: >
           Introduces wavelet-guided attention that matches SOTA Dice on BraTS,
-          FLARE, and KiTS with 80 % fewer parameters.
+          FLARE, and KiTS with 80% fewer parameters.
         images:
           - /images/research/wavelet/miccai_2025.png
           - /images/research/wavelet/miccai1_2025.png
@@ -279,8 +279,8 @@ research:
       - title: "Accident Scenario Generation using Driver Behavior Model (ITSC 2024)"
         text: >
           Uses CogMod’s explicit perceptual-and-cognitive-limitation model to
-          *generate* diverse accident scenarios for AV testing, showing how
-          human limitations shape crash causation.
+          generate diverse accident scenarios for AV testing, showing how human
+          limitations shape crash causation.
         images:
           - /images/research/cogmod/accident.png
           - /images/research/cogmod/cogmod.png
@@ -380,24 +380,32 @@ about:
       company: "Portbliss Inc., Bangladesh"
       details:
         - "Shipped four culturally significant mobile games amassing 30 million + downloads and securing 1 million USD in angel funding."
-        - "Optimised asset pipelines to cut load times by 30 % and built Unity code-obfuscation tools to mitigate IP theft."
+        - "Optimised asset pipelines to cut load times by 30% and built Unity code-obfuscation tools to mitigate IP theft."
       date: "2015 – 2018"
 
   skills:
     - category: "Programming Languages"
-      list: "Python, C, C++, C#, Java, JavaScript, SQL, Bash, PowerShell" :contentReference[oaicite:3]{index=3}
+      list: "Python, C, C++, C#, Java, JavaScript, TypeScript, SQL, Bash, PowerShell"
     - category: "Tools & Frameworks"
-      list: "Kubernetes, Docker, Flask, Git, Linux, .Net, HTML5, CSS, Flutter, Vue.js" :contentReference[oaicite:4]{index=4}
+      list: "Kubernetes, Docker, Flask, Git, Linux, .NET, HTML5, CSS3, Flutter, Vue.js"
     - category: "Machine Learning & Data Science"
-      list: "PyTorch, Scikit-learn, Keras, Matplotlib, Pandas, NumPy, OpenCV" :contentReference[oaicite:5]{index=5}
+      list: "PyTorch, TensorFlow, Keras, Scikit-learn, Matplotlib, Pandas, NumPy, OpenCV, Seaborn"
     - category: "Game Engines & Development"
-      list: "Unreal Engine, Unity, Phaser.js, GDevelop, Blender, Twine, Construct, OpenGL" :contentReference[oaicite:6]{index=6}
+      list: "Unreal Engine, Unity, Phaser.js, GDevelop, Blender, Twine, Construct, OpenGL, DirectX"
     - category: "Autonomous Vehicle Simulation"
-      list: "CARLA, SUMO, OpenDRIVE, OpenSCENARIO, ApolloAuto, RoadRunner" :contentReference[oaicite:7]{index=7}
+      list: "CARLA, SUMO, OpenDRIVE, OpenSCENARIO, ApolloAuto, RoadRunner, ROS"
     - category: "Algorithms & Mathematics"
-      list: "Data Structures, Algorithms, Linear Algebra, Computer Architecture, 3D Math, Vectors, Matrices, Quaternions, Physics" :contentReference[oaicite:8]{index=8}
+      list: "Data Structures, Algorithms, Linear Algebra, Computer Architecture, Computational Geometry, 3D Math, Vectors, Matrices, Quaternions, Physics"
     - category: "LLM Tools & Frameworks"
-      list: "LangChain, LangGraph, LM Studio, Ollama" :contentReference[oaicite:9]{index=9}
+      list: "LangChain, LangGraph, LM Studio, Ollama, Hugging Face Transformers"
+    - category: "DevOps & CI/CD"
+      list: "Jenkins, GitHub Actions, Travis CI, CircleCI, Ansible, Terraform"
+    - category: "Databases & Storage"
+      list: "MySQL, PostgreSQL, MongoDB, Redis, SQLite, Firebase"
+    - category: "Cloud & Infrastructure"
+      list: "AWS (EC2, S3, Lambda), GCP (Compute Engine, Cloud Storage), Azure"
+    - category: "Miscellaneous"
+      list: "RESTful APIs, gRPC, WebSockets, GraphQL, Microservices, Agile/Scrum"
 
 # -----------------------------------------------------------------
 # 6 · News / Updates
