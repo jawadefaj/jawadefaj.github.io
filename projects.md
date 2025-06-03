@@ -2,59 +2,137 @@
 layout: page
 permalink: /projects/
 title: Projects
+
+project_entries:
+  - title: "Multi-region-attention"
+    image_layout: "row"
+    description: >
+      The project "MRA: Multi-scale Region Attention" explores improving computation for Vision Transformers (ViTs) in image segmentation. It introduces a multi-scale regional self-attention mechanism in each transformer layer, allowing each pixel to attend to multiple scale neighborhoods. This minimizes computational load while improving global context understanding.
+    images:
+      - /images/projects/mra/mra.png
+      - /images/projects/mra/multiscale_attention.png
+    links:
+      - {url: "https://github.com/mahfuzalhasan/multi-region-attention/tree/main", text: "github"}
+
+  - title: "JunctionArt"
+    image_layout: "row"
+    description: >
+      JunctionArt is a PCG-based tool for generating high-definition roads and intersections, crucial for autonomous vehicle testing. It creates diverse networks with various intersection types and outputs OpenDRIVE for compatibility with CARLA, RoadRunner, and esmini.
+    images:
+      - /images/projects/junction_art/a-roads.png
+      - /images/projects/junction_art/another-road.png
+      - /images/projects/junction_art/5-way-new-2.png
+    links:
+      - {url: "https://github.com/AugmentedDesignLab/junction-art", text: "github"}
+      - {url: "https://www.researchgate.net/publication/360840690_Procedural_Generation_of_High-Definition_Road_Networks_for_Autonomous_Vehicle_Testing_and_Traffic_Simulations", text: "paper"}
+
+  - title: "Color Constancy Project"
+    image_layout: "row"
+    description: >
+      A deep dive into color perception under varying lighting conditions. Tasks included radiometric calibration, test pattern photography, color distribution study, and constancy experiments using a Google Pixel 3A.
+    images:
+      - /images/projects/color_consistancy/cv2.png
+      - /images/projects/color_consistancy/cv3.png
+      - /images/projects/color_consistancy/cv4.png
+    links:
+      - {url: "https://github.com/jawadefaj/CSE_264_Computer_vision", text: "github"}
+
+  - title: "Perspective Correction Project"
+    image_layout: "row"
+    description: >
+      This project focuses on correcting the perspective of building images using camera calibration, line detection, vanishing point estimation, and homography. Aimed at accurate geometric rectification of architectural images.
+    images:
+      - /images/projects/perspective_correction/undistort.png
+      - /images/projects/perspective_correction/parallel.png
+      - /images/projects/perspective_correction/camera5.png
+    links:
+      - {url: "https://github.com/jawadefaj/CSE_264_Camera_calibration", text: "github"}
+
+  - title: "Cat Mario AI"
+    image_layout: "row"
+    description: >
+      A NEAT-based AI that learns to play "Cat Mario" through reinforcement learning. Inspired by MarI/O and CrAIg, the model uses gameplay video as input and learns to survive and navigate complex traps.
+    images:
+      - /images/projects/cat_mario/image_training_10_1.jpg
+      - /images/projects/cat_mario/image_training_20_9.jpg
+    links:
+      - {url: "https://github.com/jawadefaj/cat_mario", text: "github"}
 ---
 
-<p>Here is a non-exhaustive list of my non-research projects. My research work can be found <a href="/research">here</a>. You can also check out my Github profile <a href="https://github.com/jawadefaj">here</a> for a complete list of my projects.</p>
+<p>
+Here is a non-exhaustive list of my non-research projects.
+My research work can be found <a href="/research">here</a>.
+You can also check out my Github profile <a href="https://github.com/jawadefaj">here</a> for a complete list of my projects.
+</p>
+<hr>
+{% for entry in page.project_entries %}
+<details>
+  <summary class="toggle"><span class="arrow">&#9656;</span> {{ entry.title }}</summary>
 
-<ul>
+  {% if entry.images %}
+    <div class="project-images {{ entry.image_layout }}">
+      {% for img in entry.images %}
+        <img src="{{ img }}" alt="{{ entry.title }}" class="project-img">
+      {% endfor %}
+    </div>
+  {% endif %}
 
-    <li>
-        <h3>Multi-region-attention</h3>
-        <p>The project "MRA: Multi-scale Region Attention" explores improving computation for Vision transformers (ViTs) in image segmentation task. The model uses a hierarchical structure for high-resolution images, processing images in patches and merging them into a multi-layered feature map. It introduces a multi-scale regional self-attention mechanism in each transformer layer, enabling each pixel to attend to multiple scale neighborhoods. This approach minimizes computational load while improving the understanding of the global context. Our experiments demonstrate the model's effectiveness, suggesting potential for broader applications in vision tasks.</p>
-        <img src="\images\projects\mra\mra.png" alt="Alternative Text" class="image-inline">
-        <img src="\images\projects\mra\multiscale_attention.png" alt="Alternative Text" class="image-inline"> 
-        <br>
-        <a href="https://github.com/mahfuzalhasan/multi-region-attention/tree/main" class="color-button">github</a>
-    </li><br>
+  <br>
+  {% for link in entry.links %}
+    <a href="{{ link.url }}" class="color-button">{{ link.text }}</a>
+  {% endfor %}
+</details>
+<hr><p>{{ entry.description }}</p><hr>
+{% endfor %}
 
-    <li>
-        <h3>JunctionArt</h3>
-        <p>JunctionArt is a PCG based tool for generating high-definition roads and intersections, crucial for autonomous vehicle testing. Using control lines, it creates diverse road networks with various lane and intersection types, outputting in OpenDRIVE format for broad compatibility. Key features include the generation of complex geometries, comprehensive metrics for expressive range analysis, and interoperability with major simulation tools like RoadRunner, Carla, and esmini. Developed with the pyodrx library, JunctionArt stands as an essential resource in autonomous vehicle development. The papers are included in the github repository.</p>
-        <img src="\images\projects\junction_art\a-roads.png" alt="Alternative Text" class="image-inline">
-        <img src="\images\projects\junction_art\another-road.png" alt="Alternative Text" class="image-inline">
-        <img src="\images\projects\junction_art\5-way-new-2.png" alt="Alternative Text" class="image-inline"> 
-        <br>
-        <a href="https://github.com/AugmentedDesignLab/junction-art" class="color-button">github</a>
-        <a href="https://www.researchgate.net/publication/360840690_Procedural_Generation_of_High-Definition_Road_Networks_for_Autonomous_Vehicle_Testing_and_Traffic_Simulations" class="color-button">paper</a>
-    </li><br>
+<!-- ─────  S T Y L E S  ─────────────────────────────────────────────────────────────── -->
+<style>
+summary.toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #50C878;
+  white-space: nowrap;
+}
+summary.toggle::-webkit-details-marker,
+summary.toggle::marker { display: none; }
+summary.toggle .arrow {
+  font-size: 1.3em;
+  transition: transform 0.2s ease;
+}
+details[open] > summary.toggle .arrow {
+  transform: rotate(90deg);
+}
 
-    <li>
-        <h3>Color Constancy Project</h3>
-        <p>A detailed exploration into color perception under diverse lighting and camera settings, this project, part of a Computer Vision class, comprises four distinct tasks. The work includes Camera Radiometric Calibration using a Google Pixel 3A, Test Pattern Photography under various lighting conditions, a comprehensive Color Distribution Study, and innovative Color Constancy Experiments. The project is a blend of theoretical analysis and practical application, aiming to understand and standardize color perception in digital imaging. Results and methodologies are documented and available for review.</p>
-        <img src="\images\projects\color_consistancy\cv2.png" alt="Color Calibration Image" class="image-inline">
-        <img src="\images\projects\color_consistancy\cv3.png" alt="Test Pattern Image" class="image-inline">
-        <img src="\images\projects\color_consistancy\cv4.png" alt="Color Distribution Chart" class="image-inline"> 
-        <br>
-        <a href="https://github.com/jawadefaj/CSE_264_Computer_vision" class="color-button">github</a>
-    </li><br>
+.project-images.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1em 0;
+}
+.project-images.column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1em 0;
+}
+.project-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+</style>
 
-    <li>
-        <h3>Perspective Correction Project</h3>
-        <p>This project is centered on correcting the perspective of building images. It involves five main tasks: Camera Calibration for determining intrinsic parameters and radial distortion, capturing the building image, identifying bundles of parallel lines in the image, calculating vanishing directions, and applying a rectifying homography. The project combines theoretical knowledge with practical implementation, aiming to enhance the accuracy of perspective correction in digital images. The detailed process and results are available in github.</p>
-        <img src="\images\projects\perspective_correction\undistort.png" alt="Camera Calibration Image" class="image-inline">
-        <img src="\images\projects\perspective_correction\parallel.png" alt="Captured Building Image" class="image-inline">
-        <img src="\images\projects\perspective_correction\camera5.png" alt="Vanishing Points Image" class="image-inline"> 
-        <br>
-        <a href="https://github.com/jawadefaj/CSE_264_Camera_calibration" class="color-button">github</a>
-    </li><br>
-
-    <li>
-        <h3>Cat Mario AI</h3>
-        <p>Drawing inspiration from SethBling's MarI/O and Niko's CrAIg, this project utilizes NEAT to train an AI for "Cat Mario," a complex Mario-like game. The AI is designed to navigate through the game's complex traps and challenges. The dataset comprises real-time gameplay video feeds, which are analyzed to inform AI actions. Success is measured at various levels, from completing training levels to optimizing the algorithm for faster learning. Detailed insights and results can be found on GitHub.</p>
-        <img src="\images\projects\cat_mario\image_training_10_1.jpg" alt="mid training" width="900" height="100">
-        <img src="\images\projects\cat_mario\image_training_20_9.jpg" alt="end training" width="900" height="100"> 
-        <br>
-        <a href="https://github.com/jawadefaj/cat_mario" class="color-button">github</a>
-    </li>
-
-</ul>
+<!-- ─────  J S  (A C C O R D I O N)  ──────────────────────────────────────────────── -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const all = document.querySelectorAll('details');
+  all.forEach(d => d.addEventListener('toggle', () => {
+    if (!d.open) return;
+    all.forEach(o => { if (o !== d) o.open = false; });
+  }));
+});
+</script>

@@ -2,104 +2,191 @@
 layout: page
 permalink: /research/
 title: Research
+
+# ─── DATA ────────────────────────────────────────────────────────────────────
+research_entries:
+  - title: "CogMod: Cognitive Modeling of Human Driving Behavior"
+    date: "UCSC, 2021 – Present"
+    overview: >
+      CogMod is a human driver behavior model based on theories from cognitive
+      architecture and traffic modeling. It simulates various human limitations
+      to represent human cognition while driving, limiting agents’ perception
+      by providing selective updates of the surroundings. This model captures
+      the variability in human driving by simulating perceptive and cognitive
+      limitations and helps create diverse, critical accident scenarios for
+      autonomous-vehicle testing.
+    publications:
+      - title: >
+          CogMod: Simulating Human Information Processing Limitation While
+          Driving (IV, Aachen 2022)
+        text: >
+          Introduces a method that embeds cognitive limitations into driving
+          simulations inside CARLA, yielding more realistic, nuanced accident
+          scenarios.
+        images:
+          - /images/research/cogmod/cogmod1_3.png
+          - /images/research/cogmod/cogmod1_1.png
+          - /images/research/cogmod/cogmod1_4.png
+        iframes:
+          - https://www.youtube.com/embed/g2BcNwqwVIU
+          - https://www.youtube.com/embed/CXwnYlkkxas
+        links:
+          - {url: "https://github.com/jawadefaj/CogMod-driver-behavior-model", text: "github"}
+          - {url: "https://ieeexplore.ieee.org/abstract/document/9827128", text: "paper"}
+          - {url: "https://docs.google.com/presentation/d/1n0n1ZJnNoK56XHaLxgQRCETVH6hlpo7jNcYRRwPWHYc/edit?usp=sharing", text: "slide"}
+          - {url: "https://youtu.be/g2BcNwqwVIU", text: "presentation"}
+      - title: >
+          CogMod: Driver Model for Augmenting Scenario Criticality
+          (ITSC, Bilbao 2023)
+        text: >
+          Uses a gaze mechanism and rich internal state to vary behaviour and
+          increase scenario complexity while preserving realism.
+        images:
+          - /images/research/cogmod/cogmod2_3.png
+          - /images/research/cogmod/cogmod2_1.png
+          - /images/research/cogmod/cogmod2_2.png
+        iframes:
+          - https://www.youtube.com/embed/rsR1OP4rOEY
+        links:
+          - {url: "https://github.com/jawadefaj/CogMod-driver-behavior-model", text: "github"}
+          - {url: "https://www.researchgate.net/profile/Abdul-Jawad-5/publication/374476345_CogMod_Driver_Model_for_Augmenting_Scenario_Criticality/links/651f7f283ab6cb4ec6be0979/CogMod-Driver-Model-for-Augmenting-Scenario-Criticality.pdf", text: "paper"}
+          - {url: "https://docs.google.com/presentation/d/1xqNXbjBXNfd6FbBDPz4MqpaBbmtfnrtqy4qlUeehE9Q/edit?usp=sharing", text: "slide"}
+  - title: "JunctionArt: Procedural Road Network Generator"
+    date: "UCSC, 2020 – Present"
+    overview: >
+      JunctionArt procedurally builds road networks, intersections, and
+      roundabouts (OpenDRIVE compatible) for AV testing in CARLA and RoadRunner.
+    publications:
+      - title: >
+          Procedural Generation of High-Definition Road Networks for Autonomous
+          Vehicle Testing and Traffic Simulations
+        text: >
+          Demonstrates expressive-range analysis across metrics such as FOV,
+          curvature, and conflict area.
+        images:
+          - /images/projects/junction_art/a-roads.png
+          - /images/projects/junction_art/another-road.png
+        links:
+          - {url: "https://github.com/AugmentedDesignLab/junction-art", text: "github"}
+          - {url: "https://www.sae.org/publications/technical-papers/content/12-06-01-0007/", text: "paper"}
+      - title: "Realistic Road Generation: Intersections"
+        text: >
+          Presents helper-road technique to create multi-leg intersections in
+          OpenDRIVE; validated against real data.
+        images:
+          - /images/projects/junction_art/5-way-new-2.png
+          - /images/projects/junction_art/4-way-new-1.png
+          - /images/projects/junction_art/6-wa-new-1.png
+          - /images/projects/junction_art/7-way-new-2.png
+        links:
+          - {url: "https://www.researchgate.net/profile/Golam-Md-Muktadir-2/publication/360354961_P_r_e_-P_r_i_n_t_Realistic_Road_Generation_Intersections/links/62723a27973bbb29cc601650/P-r-e-P-r-i-n-t-Realistic-Road-Generation-Intersections.pdf", text: "paper"}
+  - title: "CruzWay: Modular AV Simulation Tool"
+    date: "UCSC, 2018 – 2019"
+    overview: >
+      CruzWay procedurally generates town-scale road networks, converts SUMO to
+      Unreal meshes, and uses behaviour-tree agents for scalable AV evaluation.
+    publications:
+      - title: >
+          CruzWay: A Modular Architecture for Generating Scenarios to Test
+          Autonomous Vehicles
+        text: >
+          Combines Town-sim-py, IntGen, and SUMO2Unreal to produce diverse,
+          hard-case scenarios for AVs.
+        images:
+          - /images/research/cruzway/cruzway1.png
+          - /images/research/cruzway/cruzway2.png
+          - /images/research/cruzway/cruzway3.png
+          - /images/research/cruzway/cruzway_1.png
+          - /images/research/cruzway/cruzway4.png
+          - /images/research/cruzway/cruzway_5.png
+          - /images/research/cruzway/cruzway_4.png
+        links:
+          - {url: "https://github.com/AugmentedDesignLab/CruzWay", text: "github"}
+          - {url: "https://docs.google.com/presentation/d/1vx4r2b_J-H5eupHZMiy-r2QsCdXXBPe-o32VAWo9upU/edit?usp=sharing", text: "slide"}
+          - {url: "https://youtu.be/ru2K4Y_WrGs", text: "presentation"}
 ---
 
-<h2>CogMod: Cognitive Modeling of Human Driving Behavior</h2>
-<div style="text-align: right; color: #50C878"> UCSC, 2021-Present </div>
+{%- comment -%}
+────────────────────────  V I E W  /  P R E S E N T A T I O N  ────────────────────────
+{%- endcomment -%}
 
-<h3>Overview</h3>
-<p>CogMod is a human driver behavior model based on theories from cognitive architecture and traffic modeling. It simulates various human limitations to represent human cognition while driving, limiting agents' perception by providing selective updates of the surroundings. This model captures the variability in human driving by simulating perceptive and cognitive limitations. CogMod addresses the rarity of accident scenarios, enhancing the testing of autonomous vehicles with realistic human-like driving scenarios. It helps create diverse and critical accident scenarios by simulating human perceptual and cognitive limitations.</p>
-
-<details>
-<summary><h3>Key Publications</h3></summary>
-    <ul>
-    <li>
-        <h4 id="cogmod-simulating-human-information-processing-limitation-while-driving-iv-aachen-germany-2022">CogMod: Simulating Human Information Processing Limitation While Driving (IV Aachen Germany 2022)</h4>
-        <p>This paper introduces a new method for analyzing and simulating human driving behavior, with an emphasis on integrating cognitive limitations into driving simulations. The goal is to more accurately reflect real-world driving behaviors and errors. This enhancement in modeling techniques leads to more realistic and nuanced simulations, which are crucial for realistic simulation. These simulations are conducted using the CARLA simulator. The model replicates human-like driving scenarios, including potential errors and reaction delays.</p>
-        <img src="\images\research\cogmod\cogmod1_3.png" alt="" class="image-inline">
-        <img src="\images\research\cogmod\cogmod1_1.png" alt="" class="image-inline">
-        <!-- <img src="\images\research\cogmod\cogmod1_2.png" alt="" class="image-inline"> -->
-        <img src="\images\research\cogmod\cogmod1_4.png" alt="" class="image-inline">
-        <iframe width="200" height="170" src="https://www.youtube.com/embed/g2BcNwqwVIU" title="CogMod: Simulating Human Information Processing Limitations While Driving" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="200" height="170" src="https://www.youtube.com/embed/CXwnYlkkxas" title="CogMod: Cognitive Modeling Human Driving Behavior" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <br>
-        <a href="https://github.com/jawadefaj/CogMod-driver-behavior-model" class="color-button">github</a>
-        <a href="https://ieeexplore.ieee.org/abstract/document/9827128" class="color-button">paper</a>
-        <a href="https://docs.google.com/presentation/d/1n0n1ZJnNoK56XHaLxgQRCETVH6hlpo7jNcYRRwPWHYc/edit?usp=sharing" class="color-button">slide</a>
-        <a href="https://youtu.be/g2BcNwqwVIU" class="color-button">presentation</a>
-    </li><br>
-
-    <li>
-        <h4 id="cogmod-driver-model-for-augmenting-scenario-criticality-itsc-bilbao-spain-2023">CogMod: Driver Model for Augmenting Scenario Criticality (ITSC Bilbao Spain 2023)</h4>
-        <p>CogMod simulates more realistic human driver behavior, adapting to changing scenarios. This approach, using a unique gaze mechanism and a rich internal representation, better captures human driving variability. By comparing with real-world data, CogMod demonstrates its ability to make test scenarios for autonomous vehicles more complex while maintaining realism, addressing the limitations of previous models.</p>
-        <img src="\images\research\cogmod\cogmod2_3.png" alt="" class="image-inline">
-        <img src="\images\research\cogmod\cogmod2_1.png" alt="" class="image-inline">
-        <img src="\images\research\cogmod\cogmod2_2.png" alt="" class="image-inline"> 
-        <br>
-        <iframe width="200" height="170" src="https://www.youtube.com/embed/rsR1OP4rOEY" title="SIP 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <br>
-        <a href="https://github.com/jawadefaj/CogMod-driver-behavior-model" class="color-button">github</a>
-        <a href="https://www.researchgate.net/profile/Abdul-Jawad-5/publication/374476345_CogMod_Driver_Model_for_Augmenting_Scenario_Criticality/links/651f7f283ab6cb4ec6be0979/CogMod-Driver-Model-for_Augmenting-Scenario-Criticality.pdf" class="color-button">paper</a>
-        <a href="https://docs.google.com/presentation/d/1xqNXbjBXNfd6FbBDPz4MqpaBbmtfnrtqy4qlUeehE9Q/edit?usp=sharing" class="color-button">slide</a>
-    </li><br>
-</ul>
-</details>
-
-<h2>JunctionArt: Procedural Road Network Generator</h2>
-<div style="text-align: right; color: #50C878"> UCSC, 2020-Present </div>
-
-<h3>Overview</h3>
-<p>JunctionArt is a road generation tool that creates road networks, intersections, and roundabouts for Autonomous Vehicle testing. It features various lane types and intersection designs with procedural generation of roundabouts compatible with simulation environments like Carla and RoadRunner.</p>
+{% for entry in page.research_entries %}
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <h2 style="margin: 0; text-align: left;">{{ entry.title }}</h2>
+    <div style="color:#50C878; text-align: right;">{{ entry.date }}</div>
+</div>
+<hr>
 
 <details>
-    <summary><h3>Key Publications</h3></summary>
-    <ul>
-    <li>
-        <h4 id="procedural-generation-of-high-definition-road-networks-for-autonomous-vehicle-testing-and-traffic-simulations">Procedural Generation of High-Definition Road Networks for Autonomous Vehicle Testing and Traffic Simulations</h4>
-        <p>In the research paper, we explore advanced road network generation techniques for autonomous vehicles. JunctionArt, our road and intersection generator, plays a key role. It creates diverse road networks and intersections with varying lane types and geometries, outputting in OpenDRIVE format for compatibility with various simulation tools. This paper demonstrates JunctionArt's ability to generate rare and complex road configurations. Multiple metrics are computed over generated roads—field of view (FOV), maximum turn curvature (maxCurvature), corner deviation angle (cornerDeviation), complexity, conflictArea, and the number of interior connection lanes—and are used to perform an expressive range analysis.</p>
-        <img src="\images\projects\junction_art\a-roads.png" alt="" class="image-inline">
-        <img src="\images\projects\junction_art\another-road.png" alt="" class="image-inline"> 
-        <br>
-        <a href="https://github.com/AugmentedDesignLab/junction-art" class="color-button">github</a>
-        <a href="https://www.sae.org/publications/technical-papers/content/12-06-01-0007/" class="color-button">paper</a>
-    </li><br>
+  <summary class="toggle"><span class="arrow">&#9656;</span> Key&nbsp;Publications</summary>
+  <ul>
+    {% for pub in entry.publications %}
+    <details>
+        <summary class="toggle">
+            <span class="arrow">&#9656;</span>
+            <strong>{{ pub.title }}</strong>
+        </summary>
+        <p>{{ pub.text }}</p>
 
-    <li>
-        <h4 id="realistic-road-generation-intersections">Realistic Road Generation: Intersections</h4>
-        <p>In this paper, we present a simple way to create high-quality road intersections with realistic shapes and lanes. We use helper roads to set up the intersections easily, saving time and effort. We checked our designs against real intersections and other generators to make sure they're good. Our intersections work with many simulation tools because they're made in the OpenDRIVE format.</p>
-        <img src="\images\projects\junction_art\5-way-new-2.png" alt="" class="image-inline">
-        <img src="\images\projects\junction_art\4-way-new-1.png" alt="" class="image-inline">
-        <img src="\images\projects\junction_art\6-wa-new-1.png" alt="" class="image-inline">
-        <img src="\images\projects\junction_art\7-way-new-2.png" alt="" class="image-inline"> 
+        {% if pub.images %}
+            {% for img in pub.images %}
+                <img src="{{ img }}" alt="" class="image-inline">
+            {% endfor %}
+        {% endif %}
+
+        {% if pub.iframes %}
+            {% for vid in pub.iframes %}
+                <iframe width="200" height="170"
+                                src="{{ vid }}"
+                                title="{{ pub.title }}"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write;
+                                                encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+            {% endfor %}
+        {% endif %}
+
         <br>
-        <a href="https://www.researchgate.net/profile/Golam-Md-Muktadir-2/publication/360354961_P_r_e_-P_r_i_n_t_Realistic_Road_Generation_Intersections/links/62723a27973bbb29cc601650/P-r-e-P-r-i-n-t-Realistic-Road-Generation-Intersections.pdf" class="color-button">paper</a>
-    </li><br>
-</ul>
+        {% for link in pub.links %}
+            <a href="{{ link.url }}" class="color-button">{{ link.text }}</a>
+        {% endfor %}
+    </details>
+    <br>
+    {% endfor %}
+  </ul>
 </details>
 
-<h2>CruzWay: Modular AV Simulation Tool</h2>
-<div style="text-align: right; color: #50C878"> UCSC, 2018-2019 </div>
-
+<hr>
 <h3>Overview</h3>
-<p>CruzWay is a modular system designed for creating autonomous vehicle (AV) testing scenarios. It features procedurally generated town-sized road networks and intersections, and supports behavior-tree cars and pedestrians. Key modules include Town-sim-py for generating road networks, IntGen for intersection data, Modified netgenerate for custom road networks, and Sumo2Unreal for importing and generating road meshes in Unreal Engine. CruzWay's design allows for a variety of road configurations and supports various industry standard formats, enhancing the realism and complexity of AV testing scenarios.</p>
+<p>{{ entry.overview }}</p>
+<hr>
+{% endfor %}
 
-<details>
-    <summary><h3>Key Publications</h3></summary>
-    <ul>
-    <li>
-        <h4 id="cruzway-a-modular-architecture-for-generating-scenarios-to-test-autonomous-vehicles">CruzWay: A Modular Architecture for Generating Scenarios to Test Autonomous Vehicles</h4>
-        <p>This paper introduces CruzWay, a system designed for testing autonomous vehicles in simulated environments. CruzWay stands out for its ability to procedurally generate complex road networks and intersections, alongside road and navigation meshes from SUMO files. This approach, leveraging the modular nature of behavior trees, enables the creation of diverse and scalable testing scenarios, essential for training and evaluating autonomous vehicles in rare and challenging situations.</p>
-        <img src="\images\research\cruzway\cruzway1.png" alt="" class="image-inline">
-        <img src="\images\research\cruzway\cruzway2.png" alt="" class="image-inline">
-        <img src="\images\research\cruzway\cruzway3.png" alt="" class="image-inline">
-        <img src="\images\research\cruzway\cruzway_1.png" alt="" class="image-inline">
-        <img src="\images\research\cruzway\cruzway4.png" alt="" class="image-inline"> 
-        <img src="\images\research\cruzway\cruzway_5.png" alt="" class="image-inline"> 
-        <img src="\images\research\cruzway\cruzway_4.png" alt="" class="image-inline">
-        <br>
-        <a href="https://github.com/AugmentedDesignLab/CruzWay" class="color-button">github</a>
-        <a href="https://docs.google.com/presentation/d/1vx4r2b_J-H5eupHZMiy-r2QsCdXXBPe-o32VAWo9upU/edit?usp=sharing" class="color-button">slide</a>
-        <a href="https://youtu.be/ru2K4Y_WrGs" class="color-button">presentation</a>
-    </li><br>
-</ul>
-</details>
+<!-- ─────  S T Y L E S  ─────────────────────────────────────────────────────────────── -->
+<style>
+/* keep summary on one line & style arrow */
+summary.toggle{
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:.45rem;
+  font-size:1.5rem;
+  font-weight:600;
+  color:#50C878;
+  white-space:nowrap;
+}
+/* hide default marker */
+summary.toggle::-webkit-details-marker,
+summary.toggle::marker{display:none}
+
+/* custom triangle */
+summary.toggle .arrow{
+  font-size:1.3em;           /* bigger arrow */
+  transition:transform .2s ease;
+}
+/* rotate arrow when open */
+details[open] > summary.toggle .arrow{
+  transform:rotate(90deg);
+}
+</style>
+
