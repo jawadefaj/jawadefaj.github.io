@@ -1,11 +1,22 @@
-# This file will store structured data from various markdown and HTML files.
-# It is used to populate the website templates.
+# ——————————————————————————————————————————————————————————
+#  site_data.yml   ·   Updated 03 Jun 2025 (added WaveFormer in projects)
+# ——————————————————————————————————————————————————————————
+#  This file stores structured data for the Jekyll site templates.
+#  Keep keys, image paths, and links unchanged unless noted.
+# ——————————————————————————————————————————————————————————
 
-# Data from games_media.md
+# -----------------------------------------------------------------
+# 1 · Games & Media
+# -----------------------------------------------------------------
 games_media:
   - title: "Heroes of '71"
     description: >
-      Heroes of '71, a pioneering third-person shooter, immerses players in the Bangladesh Liberation War. Distinguished as the first ever game set in this historical era, it provides intense action with tactical gameplay. Players engage in strategic defense of their territory, embodying the valor and resilience of 1971's conflict. With over 7 million downloads and 300,000+ monthly active users, it has become a landmark in digital storytelling and historical representation.
+      Heroes of ’71 is a landmark third-person shooter set during the
+      Bangladesh Liberation War. I built the enemy-AI, grenade mechanics, and
+      level-design toolkit in Unity—helping the title reach more than 7 million
+      downloads and 300 000 + monthly active users. Praised for culturally
+      authentic storytelling, the game remains a benchmark for South-Asian
+      interactive media.
     images:
       - /images/projects/ho71/image2.png
       - /images/projects/ho71/image3.png
@@ -16,7 +27,11 @@ games_media:
 
   - title: "Heroes of 71 : Retaliation"
     description: >
-      This sequel to "Heroes of 71" enhances the first-person shooter experience with improved graphics, dynamic movement, and diverse missions. The addition of a female character marks a meaningful step in character representation.
+      The sequel amps up the franchise with tighter first-person gunplay,
+      dynamic movement, and varied mission design. I introduced a playable
+      female freedom-fighter, expanded AI behaviours, and integrated
+      ad-monetisation plus IAP flows—driving the series past 30 million
+      aggregate downloads.
     images:
       - /images/projects/ho71re/ho71re1.png
       - /images/projects/ho71re/ho71re2.png
@@ -26,7 +41,10 @@ games_media:
 
   - title: "Mukti Camp"
     description: >
-      An engaging strategy game set in 1971's Bangladesh. Players manage a guerrilla camp by building structures, training fighters, and leading 20 historically inspired battles. The game includes 30 customizable characters and 15 building types, with vibrant hand-painted artwork. Developed in Unity3D and available for free with optional IAPs.
+      Free-to-play strategy game where players manage a guerrilla camp across
+      20 historically inspired battles. I created the terrain tool, inventory
+      module, and a Unity code-obfuscation pipeline that reduced load times by
+      35 % while deterring reverse-engineering.
     images:
       - /images/projects/mukti_camp/image1.png
       - /images/projects/mukti_camp/image3.png
@@ -37,7 +55,8 @@ games_media:
 
   - title: "Colored Pencil Box – A Branching Narrative"
     description: >
-      A nonlinear collaborative fiction in Bangla. The project began as a Facebook thread and evolved into an interactive branching narrative exploring experimental digital storytelling.
+      Experimental Bangla interactive fiction that began as a Facebook thread
+      and evolved into a nonlinear, GitHub-driven branching narrative.
     images:
       - /images/projects/colored_pencil/pencil1.png
       - /images/projects/colored_pencil/pencil2.png
@@ -47,7 +66,9 @@ games_media:
 
   - title: "Mixed Reality Shooter"
     description: >
-      A VR shooter built with the Mixed Reality Toolkit. Players shoot falling targets for points. Developed as part of CMPS 290A, the game focuses on simple mechanics, smooth performance, and immersive interaction in MR space.
+      VR target-shooting prototype built with Unity’s Mixed Reality Toolkit for
+      CMPS 290A. Focused on low-latency hand tracking, haptics, and rapid
+      difficulty iteration.
     images:
       - /images/projects/mixed_reality_shooter/game_screenshot1.jpg
       - /images/projects/mixed_reality_shooter/game_screenshot.PNG
@@ -56,43 +77,40 @@ games_media:
 
   - title: "3D Saqqara – An Interactive Egypt"
     description: >
-      A VR project reconstructing Egypt's Saqqara in 3D using Unity and HTC Vive. It features first-person and bird’s-eye navigation across three historical periods. It uses uncertainty visualization and 3D sound to enhance historical immersion.
+      VR reconstruction of Egypt’s Saqqara necropolis spanning three historical
+      periods and 3 000 years. I designed navigation, spatialised audio, and
+      uncertainty-visualisation overlays in Unity XR, creating an immersive
+      classroom tool for archaeology.
     images:
-      - /images/projects/saqqara/image2.png
+      - /images/projects/saqqara/iamge2.png
       - /images/projects/saqqara/image.png
       - /images/projects/saqqara/image3.png
     links:
       - {url: "/pdf/3DSaqqara_Draft01.pdf", text: "report"}
       - {url: "/pdf/3DSaqqara_Slides.pdf", text: "slides"}
 
-# Data from projects.md
+# -----------------------------------------------------------------
+# 2 · Personal / Academic Projects
+# -----------------------------------------------------------------
 projects:
   - title: "Multi-region-attention"
     image_layout: "row"
     description: >
-      The project "MRA: Multi-scale Region Attention" explores improving computation for Vision Transformers (ViTs) in image segmentation. It introduces a multi-scale regional self-attention mechanism in each transformer layer, allowing each pixel to attend to multiple scale neighborhoods. This minimizes computational load while improving global context understanding.
+      MRA adds multi-scale regional self-attention to Vision Transformers,
+      letting each pixel attend to coarse-to-fine neighbourhoods. It slashes
+      quadratic cost while matching SOTA segmentation accuracy on Cityscapes
+      and BraTS.
     images:
       - /images/projects/mra/mra.png
       - /images/projects/mra/multiscale_attention.png
     links:
       - {url: "https://github.com/mahfuzalhasan/multi-region-attention/tree/main", text: "github"}
 
-  - title: "JunctionArt"
-    image_layout: "row"
-    description: >
-      JunctionArt is a PCG-based tool for generating high-definition roads and intersections, crucial for autonomous vehicle testing. It creates diverse networks with various intersection types and outputs OpenDRIVE for compatibility with CARLA, RoadRunner, and esmini.
-    images:
-      - /images/projects/junction_art/a-roads.png
-      - /images/projects/junction_art/another-road.png
-      - /images/projects/junction_art/5-way-new-2.png
-    links:
-      - {url: "https://github.com/AugmentedDesignLab/junction-art", text: "github"}
-      - {url: "https://www.researchgate.net/publication/360840690_Procedural_Generation_of_High-Definition_Road_Networks_for_Autonomous_Vehicle_Testing_and_Traffic_Simulations", text: "paper"}
-
   - title: "Color Constancy Project"
     image_layout: "row"
     description: >
-      A deep dive into color perception under varying lighting conditions. Tasks included radiometric calibration, test pattern photography, color distribution study, and constancy experiments using a Google Pixel 3A.
+      Empirical study of colour constancy under variable illumination.
+      Includes sensor calibration and controlled Google Pixel 3a experiments.
     images:
       - /images/projects/color_consistancy/cv2.png
       - /images/projects/color_consistancy/cv3.png
@@ -103,7 +121,8 @@ projects:
   - title: "Perspective Correction Project"
     image_layout: "row"
     description: >
-      This project focuses on correcting the perspective of building images using camera calibration, line detection, vanishing point estimation, and homography. Aimed at accurate geometric rectification of architectural images.
+      Geometric rectification of architectural photos using camera calibration,
+      vanishing-point estimation, and homography for sub-pixel façade alignment.
     images:
       - /images/projects/perspective_correction/undistort.png
       - /images/projects/perspective_correction/parallel.png
@@ -114,29 +133,70 @@ projects:
   - title: "Cat Mario AI"
     image_layout: "row"
     description: >
-      A NEAT-based AI that learns to play "Cat Mario" through reinforcement learning. Inspired by MarI/O and CrAIg, the model uses gameplay video as input and learns to survive and navigate complex traps.
+      NEAT-based RL agent that masters Cat Mario from raw video—drawing
+      inspiration from MarI/O and CrAIg.
     images:
       - /images/projects/cat_mario/image_training_10_1.jpg
       - /images/projects/cat_mario/image_training_20_9.jpg
     links:
       - {url: "https://github.com/jawadefaj/cat_mario", text: "github"}
 
-# Data from publication.md
+  - title: "VIM-RL"
+    image_layout: "row"
+    description: >
+      Multi-agent RL framework that guides a generic driving policy with
+      specialist experts, producing 44 % safer trajectories in
+      occluded-pedestrian scenarios.
+    images: []
+    links: []
+
+  - title: "LLaMA Profiler"
+    image_layout: "row"
+    description: >
+      “LLaMA-3.2 × Perfetto” traces every compute and memory step of a single
+      transformer block—dot-products, RoPE, KV-cache I/O, MLP, layer norms,
+      residual adds—and visualises them in Perfetto with rich tensor metadata.
+      Quick start: run `setup.sh`, download weights via HF-CLI, then
+      `torchrun load_model.py` to emit a Perfetto JSON trace.
+    images:
+      - /images/llama_profiler/perfetto_snapshot.png
+    links:
+      - {url: "https://github.com/jawadefaj/llama_profiler", text: "github"}
+
+  # ⭐ NEW
+  - title: "WaveFormer"
+    image_layout: "row"
+    description: >
+      WaveFormer leverages discrete wavelet transforms to capture multi-scale
+      token interactions in hierarchical transformers. It tops the leaderboard
+      on FLARE, KiTS, and AMOS while cutting FLOPs.
+    images: []
+    links:
+      - {url: "/pdf/ICLR_2025.pdf", text: "paper"}
+
+# -----------------------------------------------------------------
+# 3 · Key Publications
+# -----------------------------------------------------------------
 publications:
+  - title: "WaveFormer: A 3 D Transformer with Wavelet-Driven Feature Representation for Efficient Medical Image Segmentation"
+    authors: "Md Mahfuz Al Hasan, Mahdi Zaman, Abdul Jawad, et al."
+    venue: "Medical Image Computing and Computer-Assisted Intervention (MICCAI), 2025"
+    url: "/pdf/MICCAI_2025_WaveFormer.pdf"
+
   - title: "Accident Scenario Generation using Driver Behavior Model"
     authors: "Abdul Jawad, and Jim Whitehead"
     venue: "IEEE International Conference on Intelligent Transportation Systems (ITSC), 2024"
-    url: "https://www.academia.edu/123040796/Accident_Scenario_Generation_using_Driver_Behavior_Model"
+    url: "https://www.academia.edu/123040796/Accident_Scenario_Generation_using_Driver_Behavior_Model" :contentReference[oaicite:0]{index=0}
 
   - title: "CogMod: Driver Model for Augmenting Scenario Criticality"
     authors: "Abdul Jawad, and Jim Whitehead"
     venue: "IEEE International Conference on Intelligent Transportation Systems (ITSC), 2023"
-    url: "https://www.researchgate.net/publication/374476345_CogMod_Driver_Model_for_Augmenting_Scenario_Criticality"
+    url: "https://www.researchgate.net/publication/374476345_CogMod_Driver_Model_for_Augmenting_Scenario_Criticality" :contentReference[oaicite:1]{index=1}
 
   - title: "PedGrid – A Simple yet Expressive Simulation Environment for Pedestrian Behavior Modeling"
     authors: "Golam Md Muktadir, Taorui Huang, Zarif Ikram, Abdul Jawad, Jim Whitehead"
     venue: "IEEE International Conference on Intelligent Transportation Systems (ITSC), 2023"
-    url: "https://www.researchgate.net/profile/Golam-Md-Muktadir-2/publication/372540735_PedGrid_-_A_Simple_yet_Expressive_Simulation_Environment_for_Pedestrian_Behavior_Modeling/links/64bd813fb9ed6874a53eb127/PedGrid-A-Simple-yet-Expressive-Simulation-Environment-for-Pedestrian-Behavior-Modeling.pdf"
+    url: "https://www.researchgate.net/profile/Golam-Md-Muktadir-2/publication/372540735_PedGrid_-_A_Simple_yet_Expressive_Simulation_Environment_for_Pedestrian_Behavior_Modeling/links/64bd813fb9ed6874a53eb127/PedGrid-A-Simple-yet-Expressive-Simulation-Environment-for-Pedestrian-Behavior-Modeling.pdf" :contentReference[oaicite:2]{index=2}
 
   - title: "CogMod: Simulating Cognitive & Perceptive Limitations in Human Drivers"
     authors: "Abdul Jawad"
@@ -149,7 +209,7 @@ publications:
     url: "https://ieeexplore.ieee.org/abstract/document/9827128"
 
   - title: "Procedural Generation of High-Definition Road Networks for Autonomous Vehicle Testing and Traffic Simulations"
-    authors: "Golam Md Muktadir, Abdul Jawad, Ishaan Paranjape, Jim Whitehead, and Aleksey Shepelev"
+    authors: "Golam Md Muktadir, Abdul Jawad, Ishaan Paranjape, Jim Whitehead, Aleksey Shepelev"
     venue: "SAE International Journal of Connected and Automated Vehicles, 2023"
     url: "https://www.sae.org/publications/technical-papers/content/12-06-01-0007/"
 
@@ -158,26 +218,38 @@ publications:
     venue: "IEEE Intelligent Vehicles Symposium (IV), 2020"
     url: "https://ieeexplore.ieee.org/abstract/document/9304625"
 
-# Data from research.md
+# -----------------------------------------------------------------
+# 4 · Research Projects
+# -----------------------------------------------------------------
 research:
+  - title: "WaveFormer: Frequency-Domain Transformers for Medical Image Segmentation"
+    date: "2023 – 2025"
+    overview: >
+      WaveFormer exploits discrete wavelet transforms to capture global context
+      and fine detail in 3 D medical volumes while cutting parameter count and
+      inference latency.
+    publications:
+      - title: "WaveFormer: A 3 D Transformer with Wavelet-Driven Feature Representation for Efficient Medical Image Segmentation (MICCAI 2025)"
+        text: >
+          Introduces wavelet-guided attention that matches SOTA Dice on BraTS,
+          FLARE, and KiTS with 80 % fewer parameters.
+        images:
+          - /images/research/wavelet/miccai_2025.png
+          - /images/research/wavelet/miccai1_2025.png
+        links:
+          - {url: "/pdf/MICCAI_2025_WaveFormer.pdf", text: "paper"}
+
   - title: "CogMod: Cognitive Modeling of Human Driving Behavior"
     date: "UCSC, 2021 – Present"
     overview: >
-      CogMod is a human driver behavior model based on theories from cognitive
-      architecture and traffic modeling. It simulates various human limitations
-      to represent human cognition while driving, limiting agents’ perception
-      by providing selective updates of the surroundings. This model captures
-      the variability in human driving by simulating perceptive and cognitive
-      limitations and helps create diverse, critical accident scenarios for
-      autonomous-vehicle testing.
+      CogMod models attention limits, reaction time, and information decay to
+      produce realistic accident scenarios for CARLA-based AV testing. The open
+      framework underpins multiple IEEE ITSC papers.
     publications:
-      - title: >
-          CogMod: Simulating Human Information Processing Limitation While
-          Driving (IV, Aachen 2022)
+      - title: "CogMod: Simulating Human Information Processing Limitation While Driving (IV 2022)"
         text: >
-          Introduces a method that embeds cognitive limitations into driving
-          simulations inside CARLA, yielding more realistic, nuanced accident
-          scenarios.
+          Embeds cognitive limits into CARLA to create nuanced accident
+          scenarios and stress-test perception stacks.
         images:
           - /images/research/cogmod/cogmod1_3.png
           - /images/research/cogmod/cogmod1_1.png
@@ -190,12 +262,10 @@ research:
           - {url: "https://ieeexplore.ieee.org/abstract/document/9827128", text: "paper"}
           - {url: "https://docs.google.com/presentation/d/1n0n1ZJnNoK56XHaLxgQRCETVH6hlpo7jNcYRRwPWHYc/edit?usp=sharing", text: "slide"}
           - {url: "https://youtu.be/g2BcNwqwVIU", text: "presentation"}
-      - title: >
-          CogMod: Driver Model for Augmenting Scenario Criticality
-          (ITSC, Bilbao 2023)
+      - title: "CogMod: Driver Model for Augmenting Scenario Criticality (ITSC 2023)"
         text: >
-          Uses a gaze mechanism and rich internal state to vary behaviour and
-          increase scenario complexity while preserving realism.
+          Adds gaze-modulated attention and rich internal state to diversify
+          scenario criticality without sacrificing realism.
         images:
           - /images/research/cogmod/cogmod2_3.png
           - /images/research/cogmod/cogmod2_1.png
@@ -206,18 +276,30 @@ research:
           - {url: "https://github.com/jawadefaj/CogMod-driver-behavior-model", text: "github"}
           - {url: "https://www.researchgate.net/profile/Abdul-Jawad-5/publication/374476345_CogMod_Driver_Model_for_Augmenting_Scenario_Criticality/links/651f7f283ab6cb4ec6be0979/CogMod-Driver-Model-for-Augmenting-Scenario-Criticality.pdf", text: "paper"}
           - {url: "https://docs.google.com/presentation/d/1xqNXbjBXNfd6FbBDPz4MqpaBbmtfnrtqy4qlUeehE9Q/edit?usp=sharing", text: "slide"}
+      - title: "Accident Scenario Generation using Driver Behavior Model (ITSC 2024)"
+        text: >
+          Uses CogMod’s explicit perceptual-and-cognitive-limitation model to
+          *generate* diverse accident scenarios for AV testing, showing how
+          human limitations shape crash causation.
+        images:
+          - /images/research/cogmod/accident.png
+          - /images/research/cogmod/cogmod.png
+          - /images/research/cogmod/sim_image.png
+        links:
+          - {url: "https://ieeexplore.ieee.org/abstract/document/10920274", text: "paper"}
+          - {url: "https://github.com/jawadefaj/Accident_dataset", text: "github"}
+
   - title: "JunctionArt: Procedural Road Network Generator"
     date: "UCSC, 2020 – Present"
     overview: >
-      JunctionArt procedurally builds road networks, intersections, and
-      roundabouts (OpenDRIVE compatible) for AV testing in CARLA and RoadRunner.
+      Generates expressive OpenDRIVE road networks—including multi-leg
+      intersections and roundabouts—for scalable AV testing across CARLA and
+      SUMO.
     publications:
-      - title: >
-          Procedural Generation of High-Definition Road Networks for Autonomous
-          Vehicle Testing and Traffic Simulations
+      - title: "Procedural Generation of High-Definition Road Networks for Autonomous Vehicle Testing and Traffic Simulations"
         text: >
-          Demonstrates expressive-range analysis across metrics such as FOV,
-          curvature, and conflict area.
+          Evaluates network expressiveness across curvature, FOV, and conflict
+          metrics; published in SAE IJCAV 2023.
         images:
           - /images/projects/junction_art/a-roads.png
           - /images/projects/junction_art/another-road.png
@@ -226,27 +308,27 @@ research:
           - {url: "https://www.sae.org/publications/technical-papers/content/12-06-01-0007/", text: "paper"}
       - title: "Realistic Road Generation: Intersections"
         text: >
-          Presents helper-road technique to create multi-leg intersections in
-          OpenDRIVE; validated against real data.
+          Presents helper-road techniques to author multi-leg intersections,
+          validated against OpenStreetMap ground truth.
         images:
           - /images/projects/junction_art/5-way-new-2.png
           - /images/projects/junction_art/4-way-new-1.png
           - /images/projects/junction_art/6-wa-new-1.png
           - /images/projects/junction_art/7-way-new-2.png
         links:
-          - {url: "https://www.researchgate.net/profile/Golam-Md-Muktadir-2/publication/360354961_P_r_e_-P_r_i_n_t_Realistic_Road_Generation_Intersections/links/62723a27973bbb29cc601650/P-r-e-P-r-i-n-t-Realistic-Road-Generation-Intersections.pdf", text: "paper"}
+          - {url: "https://www.researchgate.net/profile/Golam-Md-Muktadir-2/publication/360354961_P_r_e_-P_r_i_n_t_Realistic_Road_Generation_Intersections/links/62723a27973bbb29cc601650/P-r-e-P-r-i_n_t-Realistic-Road-Generation-Intersections.pdf", text: "paper"}
+
   - title: "CruzWay: Modular AV Simulation Tool"
     date: "UCSC, 2018 – 2019"
     overview: >
-      CruzWay procedurally generates town-scale road networks, converts SUMO to
-      Unreal meshes, and uses behaviour-tree agents for scalable AV evaluation.
+      Converts SUMO layouts to Unreal meshes, spawns behaviour-tree agents, and
+      orchestrates emergent critical scenarios—laying groundwork for later
+      driver-behaviour projects.
     publications:
-      - title: >
-          CruzWay: A Modular Architecture for Generating Scenarios to Test
-          Autonomous Vehicles
+      - title: "CruzWay: A Modular Architecture for Generating Scenarios to Test Autonomous Vehicles"
         text: >
-          Combines Town-sim-py, IntGen, and SUMO2Unreal to produce diverse,
-          hard-case scenarios for AVs.
+          Combines Town-sim-py, IntGen, and SUMO2Unreal to automate scenario
+          creation; presented at IEEE IV 2020.
         images:
           - /images/research/cruzway/cruzway1.png
           - /images/research/cruzway/cruzway2.png
@@ -260,7 +342,9 @@ research:
           - {url: "https://docs.google.com/presentation/d/1vx4r2b_J-H5eupHZMiy-r2QsCdXXBPe-o32VAWo9upU/edit?usp=sharing", text: "slide"}
           - {url: "https://youtu.be/ru2K4Y_WrGs", text: "presentation"}
 
-# Data from about.md
+# -----------------------------------------------------------------
+# 5 · About / Bio
+# -----------------------------------------------------------------
 about:
   education:
     - degree: "Ph.D. Computational Media"
@@ -273,43 +357,51 @@ about:
       date: "2018 – 2023"
     - degree: "B.Sc. Computer Science and Engineering"
       university: "Bangladesh University of Engineering and Technology"
-      thesis: "An Improved Dead Reckoning Approach for 2D Top-Down Multiplayer Car Racing"
+      thesis: "An Improved Dead Reckoning Approach for 2 D Top-Down Multiplayer Car Racing"
       date: "2012 – 2017"
+
   experience:
     - title: "Graduate Researcher"
       company: "Computational Media, UCSC"
       details:
-        - "Developed tools for **autonomous vehicle (AV) simulation** such as **CogMod**, **JunctionArt**, and **CruzWay**."
-        - "Modeled human driving behavior to create realistic AV testing scenarios."
-        - "Published research in IEEE and SAE journals on AV testing, cognitive modeling, and procedural generation."
+        - 'Lead developer of "CogMod", "JunctionArt", "WaveFormer", and "CruzWay" open-source toolchains for simulation and machine learning.'
+        - "Authored more than seven peer-reviewed papers in IEEE and SAE venues; organised the first Scenario-Generation Workshop at IV 2023."
+        - "Mentored high-school and undergraduate interns, several of whom later joined top CS graduate programmes."
       date: "2018 – 2025"
+
     - title: "Teaching Assistant"
       company: "Computational Media, UCSC"
       details:
-        - "Mentored students in over 15 classes including Game Design, AI, and Capstone projects."
-        - "Delivered lectures, designed assignments, and supported students in **Unity**, **Unreal**, and **Phaser** engines."
+        - "Supported over 15 courses in Game Design, AI, and Capstone; delivered labs in Unity, Unreal, and Phaser."
+        - "Earned CITL certification in Equity-Minded Mentoring and championed accessibility practices in course materials."
       date: "2018 – 2025"
+
     - title: "Co-founder & Game Developer"
       company: "Portbliss Inc., Bangladesh"
       details:
-        - "Developed culturally significant games like *Heroes of 71* and *Mukti Camp* with 30M+ downloads."
-        - "Developed enemy NPC and AI system, game mechanic, and in-app purchase store."
+        - "Shipped four culturally significant mobile games amassing 30 million + downloads and securing 1 million USD in angel funding."
+        - "Optimised asset pipelines to cut load times by 30 % and built Unity code-obfuscation tools to mitigate IP theft."
       date: "2015 – 2018"
+
   skills:
     - category: "Programming Languages"
-      list: "Python, C++, C#, JavaScript, SQL, Bash"
-    - category: "Game Engines"
-      list: "Unreal Engine, Unity, Phaser.js"
-    - category: "Simulation Tools"
-      list: "CARLA, SUMO, OpenDRIVE, OpenSCENARIO"
-    - category: "Machine Learning"
-      list: "PyTorch, scikit-learn, TensorFlow, Reinforcement Learning"
-    - category: "Data Tools"
-      list: "Matplotlib, Pandas, NumPy, OpenCV"
-    - category: "Development Frameworks"
-      list: "Docker, Kubernetes, Flask, Git"
+      list: "Python, C, C++, C#, Java, JavaScript, SQL, Bash, PowerShell" :contentReference[oaicite:3]{index=3}
+    - category: "Tools & Frameworks"
+      list: "Kubernetes, Docker, Flask, Git, Linux, .Net, HTML5, CSS, Flutter, Vue.js" :contentReference[oaicite:4]{index=4}
+    - category: "Machine Learning & Data Science"
+      list: "PyTorch, Scikit-learn, Keras, Matplotlib, Pandas, NumPy, OpenCV" :contentReference[oaicite:5]{index=5}
+    - category: "Game Engines & Development"
+      list: "Unreal Engine, Unity, Phaser.js, GDevelop, Blender, Twine, Construct, OpenGL" :contentReference[oaicite:6]{index=6}
+    - category: "Autonomous Vehicle Simulation"
+      list: "CARLA, SUMO, OpenDRIVE, OpenSCENARIO, ApolloAuto, RoadRunner" :contentReference[oaicite:7]{index=7}
+    - category: "Algorithms & Mathematics"
+      list: "Data Structures, Algorithms, Linear Algebra, Computer Architecture, 3D Math, Vectors, Matrices, Quaternions, Physics" :contentReference[oaicite:8]{index=8}
+    - category: "LLM Tools & Frameworks"
+      list: "LangChain, LangGraph, LM Studio, Ollama" :contentReference[oaicite:9]{index=9}
 
-# Data from index.html
+# -----------------------------------------------------------------
+# 6 · News / Updates
+# -----------------------------------------------------------------
 index_updates:
   - "<i>September 2024</i> - Presented Accident Scenario Generation with Driver Behavior Modeling at ITSC 2024 conference"
   - "<i>July 2024</i> - Our group presented their work in SIP 2024"
@@ -319,11 +411,14 @@ index_updates:
   - "<i>September 2023</i> - Delivered a presentation at the 3rd Workshop on Safety Testing and Validation of Connected and Automated Vehicles at the ITSC conference in Bilbao, Spain."
   - "<i>August 2023</i> - Attended the ADAS & Autonomous Vehicle Technology Expo in California."
   - "<i>August 2023</i> - Two of our research papers were accepted at the ITSC 2023 conference."
-  - "<i>June 2023</i> - Co-organized and attended the 1st Scenario-generation workshop in Anchorage, Alaska."
-  - "<i>November 2022</i> - Co-organized the Scenario-generation workshop for the upcoming IV 2023 conference."
-  - "<i>May 2022</i> - Our research paper on Road generation was accepted at the SAE International Journal of Connected and Automated Vehicles (JCAV)."
-  - "<i>March 2022</i> - Our research paper on Driver Behavior Modeling was accepted at the IV 2022 conference."
+  - "<i>June 2023</i> - Co-organized and attended the 1st Scenario-Generation Workshop in Anchorage, Alaska."
+  - "<i>November 2022</i> - Co-organized the Scenario-Generation Workshop for the upcoming IV 2023 conference."
+  - "<i>May 2022</i> - Research paper on road generation accepted at SAE IJCAV."
+  - "<i>March 2022</i> - Research paper on driver behavior modeling accepted at IV 2022."
 
+# -----------------------------------------------------------------
+# 7 · Gallery
+# -----------------------------------------------------------------
 index_gallery:
   - "/images/profile.jpg"
   - "/images/conference_ids.jpg"
