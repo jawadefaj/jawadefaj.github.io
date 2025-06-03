@@ -24,76 +24,37 @@ permalink: /about/
 ---
 
 ## Education
-
+{% for edu in site.data.site_data.about.education %}
 <div style="display: flex; justify-content: space-between; align-items: baseline;">
   <div>
-    <strong style="color: #4A90E2;">Ph.D. Computational Media</strong>, <span style="color: #FFD700;">University of California, Santa Cruz</span>  
-    <br>Dissertation: <em>Simulating Accident Scenarios with Realistic Driver Behavior Models for Autonomous Vehicles</em>
+    <strong style="color: #4A90E2;">{{ edu.degree }}</strong>, <span style="color: #FFD700;">{{ edu.university }}</span>
+    {% if edu.dissertation %}<br>Dissertation: <em>{{ edu.dissertation }}</em>{% endif %}
+    {% if edu.thesis %}<br>Thesis: <em>{{ edu.thesis }}</em>{% endif %}
   </div>
-  <div style="text-align: right; color: #3DDC84;"><strong>2018 – 2025</strong></div>
+  <div style="text-align: right; color: #3DDC84;"><strong>{{ edu.date }}</strong></div>
 </div>
-
-<div style="display: flex; justify-content: space-between; align-items: baseline;">
-  <div>
-    <strong style="color: #4A90E2;">M.Sc. Computational Media</strong>, <span style="color: #FFD700;">University of California, Santa Cruz</span>  
-    <br>Thesis: <em>CogMod: Simulating Cognitive and Perceptive Limitations in Human Drivers</em>
-  </div>
-  <div style="text-align: right; color: #3DDC84;"><strong>2018 – 2023</strong></div>
-</div>
-
-<div style="display: flex; justify-content: space-between; align-items: baseline;">
-  <div>
-    <strong style="color: #4A90E2;">B.Sc. Computer Science and Engineering</strong>, <span style="color: #FFD700;">Bangladesh University of Engineering and Technology</span>  
-    <br>Thesis: <em>An Improved Dead Reckoning Approach for 2D Top-Down Multiplayer Car Racing</em>
-  </div>
-  <div style="text-align: right; color: #3DDC84;"><strong>2012 – 2017</strong></div>
-</div>
+{% endfor %}
 
 ---
 
 ## Research & Professional Experience
-
+{% for exp in site.data.site_data.about.experience %}
 <div style="display: flex; justify-content: space-between; align-items: baseline;">
   <div>
-    <strong style="color: #4A90E2;">Graduate Researcher</strong>, <span style="color: #FFD700;">Computational Media, UCSC</span>  
+    <strong style="color: #4A90E2;">{{ exp.title }}</strong>, <span style="color: #FFD700;">{{ exp.company }}</span>
     <ul>
-      <li>Developed tools for <strong>autonomous vehicle (AV) simulation</strong> such as <strong>CogMod</strong>, <strong>JunctionArt</strong>, and <strong>CruzWay</strong>.</li>
-      <li>Modeled human driving behavior to create realistic AV testing scenarios.</li>
-      <li>Published research in IEEE and SAE journals on AV testing, cognitive modeling, and procedural generation.</li>
+      {% for item in exp.details %}
+      <li>{{ item }}</li>
+      {% endfor %}
     </ul>
   </div>
-  <div style="text-align: right; color: #3DDC84;"><strong>2018 – 2025</strong></div>
+  <div style="text-align: right; color: #3DDC84;"><strong>{{ exp.date }}</strong></div>
 </div>
-
-<div style="display: flex; justify-content: space-between; align-items: baseline;">
-  <div>
-    <strong style="color: #4A90E2;">Teaching Assistant</strong>, <span style="color: #FFD700;">Computational Media, UCSC</span>  
-    <ul>
-      <li>Mentored students in over 15 classes including Game Design, AI, and Capstone projects.</li>
-      <li>Delivered lectures, designed assignments, and supported students in <strong>Unity</strong>, <strong>Unreal</strong>, and <strong>Phaser</strong> engines.</li>
-    </ul>
-  </div>
-  <div style="text-align: right; color: #3DDC84;"><strong>2018 – 2025</strong></div>
-</div>
-
-<div style="display: flex; justify-content: space-between; align-items: baseline;">
-  <div>
-    <strong style="color: #4A90E2;">Co-founder & Game Developer</strong>, <span style="color: #FFD700;">Portbliss Inc., Bangladesh</span>  
-    <ul>
-      <li>Developed culturally significant games like <em>Heroes of 71</em> and <em>Mukti Camp</em> with 30M+ downloads.</li>
-      <li>Developed enemy NPC and AI system, game mechanic, and in-app purchase store.</li>
-    </ul>
-  </div>
-  <div style="text-align: right; color: #3DDC84;"><strong>2015 – 2018</strong></div>
-</div>
+{% endfor %}
 
 ---
 
 ## Skills
-
-- **<span style="color: #4A90E2;">Programming Languages:</span>** Python, C++, C#, JavaScript, SQL, Bash  
-- **<span style="color: #4A90E2;">Game Engines:</span>** Unreal Engine, Unity, Phaser.js  
-- **<span style="color: #4A90E2;">Simulation Tools:</span>** CARLA, SUMO, OpenDRIVE, OpenSCENARIO  
-- **<span style="color: #4A90E2;">Machine Learning:</span>** PyTorch, scikit-learn, TensorFlow, Reinforcement Learning  
-- **<span style="color: #4A90E2;">Data Tools:</span>** Matplotlib, Pandas, NumPy, OpenCV  
-- **<span style="color: #4A90E2;">Development Frameworks:</span>** Docker, Kubernetes, Flask, Git  
+{% for skill_item in site.data.site_data.about.skills %}
+- **<span style="color: #4A90E2;">{{ skill_item.category }}:</span>** {{ skill_item.list }}
+{% endfor %}
