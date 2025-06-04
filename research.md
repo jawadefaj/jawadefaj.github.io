@@ -87,14 +87,4 @@ details[open] > summary.toggle .arrow{
   transform:rotate(90deg);
 }
 </style>
-<!-- 
-─────  J S  (A C C O R D I O N)  ────────────────────────────────────────────────
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const all = document.querySelectorAll('details');
-  all.forEach(d => d.addEventListener('toggle', () => {
-    if (!d.open) return;
-    all.forEach(o => { if (o !== d) o.open = false; });
-  }));
-});
-</script> -->
+

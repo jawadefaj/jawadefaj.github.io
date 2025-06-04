@@ -387,7 +387,7 @@ about:
     - category: "Programming Languages"
       list: "Python, C, C++, C#, Java, JavaScript, TypeScript, SQL, Bash, PowerShell"
     - category: "Tools & Frameworks"
-      list: "Kubernetes, Docker, Flask, Git, Linux, .NET, HTML5, CSS3, Flutter, Vue.js"
+      list: "Kubernetes, Docker, Flask, Git, Linux, .NET, HTML5, CSS3, Flutter"
     - category: "Machine Learning & Data Science"
       list: "PyTorch, TensorFlow, Keras, Scikit-learn, Matplotlib, Pandas, NumPy, OpenCV, Seaborn"
     - category: "Game Engines & Development"
@@ -399,13 +399,13 @@ about:
     - category: "LLM Tools & Frameworks"
       list: "LangChain, LangGraph, LM Studio, Ollama, Hugging Face Transformers"
     - category: "DevOps & CI/CD"
-      list: "Jenkins, GitHub Actions, Travis CI, CircleCI, Ansible, Terraform"
+      list: "Jenkins, GitHub Actions"
     - category: "Databases & Storage"
       list: "MySQL, PostgreSQL, MongoDB, Redis, SQLite, Firebase"
-    - category: "Cloud & Infrastructure"
-      list: "AWS (EC2, S3, Lambda), GCP (Compute Engine, Cloud Storage), Azure"
+    # - category: "Cloud & Infrastructure"
+    #   list: "AWS"
     - category: "Miscellaneous"
-      list: "RESTful APIs, gRPC, WebSockets, GraphQL, Microservices, Agile/Scrum"
+      list: "RESTful APIs, GraphQL, Microservices, Agile/Scrum"
 
 # -----------------------------------------------------------------
 # 6 · News / Updates
