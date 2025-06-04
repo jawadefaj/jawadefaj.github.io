@@ -19,7 +19,7 @@ $h3-text-color: #50C878;
 $h4-text-color: darken($h1-text-color, 30%);
 
 
-$background-color: rgb(62, 62, 62);
+$background-color: #0d1117;
 $link-color:      rgb(156, 255, 156);
 $link-color-hover:  lighten($link-color, 10%);
 $link-color-visited:  darken($link-color, 20%);
@@ -30,8 +30,8 @@ $blue-color-light: lighten($blue-color, 10%);
 
 $white-color: rgb(255, 255, 255);
 $black-color: rgb(20, 20, 20);
-$black-color-dark: darken($black-color, 10%);
-$black-color-light: lighten($black-color, 10%);
+$black-color-dark: #0d1117;
+$black-color-light: #161a1f;
 
 $grey-color: rgb(138, 137, 137);
 $grey-color-light: lighten($grey-color, 40%);
