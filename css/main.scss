@@ -62,3 +62,30 @@ $on-laptop: $content-width;
     "layout",
     "syntax-highlighting",
     "image";
+
+// Styles for Vanta.js background
+body {
+  position: relative; // Ensures z-index context for children if needed
+  // Vanta.js will set the background color directly or on its canvas
+}
+
+.vanta-canvas { // Vanta.js adds this class to its canvas
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0; // Ensure it's behind other content
+  // pointer-events: none; // Optionally uncomment if mouse interaction with page elements is blocked
+}
+
+// Ensure page content is on top of the Vanta canvas
+// The existing .page-content wrapper can be used.
+// We need to make sure it (and header/footer) have a higher z-index.
+
+header.site-header,
+.page-content,
+footer.site-footer {
+  position: relative; // Required for z-index to take effect
+  z-index: 1;        // Higher z-index than the canvas
+}
