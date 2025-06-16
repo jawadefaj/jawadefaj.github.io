@@ -3,11 +3,15 @@ layout: page
 title: 
 permalink: /about/
 ---
-
 <div style="text-align: center; margin-bottom: 20px; font-size: 1.5em; font-weight: bold;">
   <span style="color: #3DDC84; animation: color-fade 2s infinite;">abjawad@ucsc.edu</span> | 
   <span style="color: #4A90E2; animation: color-fade 2s infinite;">+1 831-419-3654</span> | 
   <span style="color: #FFD700; animation: color-fade 2s infinite;"><a href="http://jawadefaj.xyz" style="color: inherit;">jawadefaj.xyz</a></span>
+</div>
+
+<div style="text-align: center; margin-bottom: 30px;">
+  <a href="/pdf/Jawad%20Efaj%20Job%20Resume.pdf" target="_blank" style="display: inline-block; margin: 0 10px; padding: 10px 24px; background: #3DDC84; color: #fff; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background 0.2s;">View Resume</a>
+  <a href="/pdf/Jawad%20Efaj%20Job%20Resume.pdf" download style="display: inline-block; margin: 0 10px; padding: 10px 24px; background: #4A90E2; color: #fff; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background 0.2s;">Download Resume</a>
 </div>
 
 <style>
